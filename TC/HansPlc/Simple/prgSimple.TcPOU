@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="prgSimple" Id="{5077cfbc-288b-4c64-97b4-c087f2bac30f}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM prgSimple
+VAR
+	_counter : ULINT;
+	_counterActive : BOOL;
+	_reset : BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF(_counterActive) THEN _counter := _counter + 1; END_IF
+IF(_reset) THEN _counter := 0; _reset := false; END_IF;
+]]></ST>
+    </Implementation>
+    <LineIds Name="prgSimple">
+      <LineId Id="5" Count="0" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="MAIN" Id="{70a7c993-437c-4ccb-8a12-e68d1ba9b2d5}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[prgSimple();
+prgWeatherStations();
+prgAddedProperties();]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="13" Count="0" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="12" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

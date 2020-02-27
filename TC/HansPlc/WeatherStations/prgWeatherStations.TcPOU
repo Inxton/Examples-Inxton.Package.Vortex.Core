@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="prgWeatherStations" Id="{63837f3c-745d-4340-ad1b-7cd9b6b37ded}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM prgWeatherStations
+VAR
+	_weatherStationsCyclicAccess : fbWorldWeatherWatch;
+	_weatherStationsBatchAccess : fbWorldWeatherWatch;
+	_weatherStationsSynchronAccess : fbWorldWeatherWatch;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[_weatherStationsCyclicAccess();
+_weatherStationsBatchAccess();
+_weatherStationsSynchronAccess();]]></ST>
+    </Implementation>
+    <LineIds Name="prgWeatherStations">
+      <LineId Id="6" Count="1" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

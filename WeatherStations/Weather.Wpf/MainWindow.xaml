@@ -1,0 +1,69 @@
+﻿<Window
+    x:Class="Weather.Wpf.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Weather.Wpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d"
+    DataContext="{x:Static local:App.Hans}"
+    Title="MainWindow">
+    <Grid DataContext="{Binding prgWeatherStations._weatherStationsCyclicAccess}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ItemsControl ItemsSource="{Binding WeatherStations}" Margin="10">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="4" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <GroupBox Header="{Binding AttributeName}">
+                        <StackPanel>
+                            <GroupBox DataContext="{Binding StationICAO, Mode=OneWay}" Header="{Binding AttributeName}">
+                                <TextBlock Text="{Binding Cyclic}" />
+                            </GroupBox>
+                            <GroupBox DataContext="{Binding StationStatus, Mode=OneWay}" Header="{Binding AttributeName}">
+                                <TextBlock Text="{Binding Cyclic}" />
+                            </GroupBox>
+                            <GroupBox DataContext="{Binding DewPoint}" Header="{Binding AttributeName}">
+                                <TextBlock Text="{Binding Cyclic}" />
+                            </GroupBox>
+                            <GroupBox DataContext="{Binding Temp}" Header="{Binding AttributeName}">
+                                <TextBlock Text="{Binding Cyclic}" />
+                            </GroupBox>
+                            <GroupBox DataContext="{Binding Pressure, Mode=OneWay}" Header="{Binding AttributeName}">
+                                <TextBlock Text="{Binding Cyclic}" />
+                            </GroupBox>
+                            <GroupBox DataContext="{Binding Visibility, Mode=OneWay}" Header="{Binding AttributeName}">
+                                <TextBlock Text="{Binding Cyclic}" />
+                            </GroupBox>
+                            <GroupBox DataContext="{Binding WindSpeed, Mode=OneWay}" Header="{Binding AttributeName}">
+                                <TextBlock Text="{Binding Cyclic}" />
+                            </GroupBox>
+                            <GroupBox DataContext="{Binding WindHeading, Mode=OneWay}" Header="{Binding AttributeName}">
+                                <TextBlock Text="{Binding Cyclic}" />
+                            </GroupBox>
+                        </StackPanel>
+                    </GroupBox>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <GroupBox Header="This is the comment about weather made by the PLC :)" Grid.Row="1">
+            <TextBlock Margin="10" TextWrapping="WrapWithOverflow" FontSize="15" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Stretch" 
+                       VerticalAlignment="Stretch" 
+                       Text="{Binding PlcCommentOnCurrentWeather.Cyclic}"></TextBlock>
+        </GroupBox>
+        <WrapPanel Grid.Row="2" HorizontalAlignment="Center">
+            <Button Click="Button_Click">UPDATE</Button>
+        </WrapPanel>
+    </Grid>
+</Window>

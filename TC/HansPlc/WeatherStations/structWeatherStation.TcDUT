@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <DUT Name="structWeatherStation" Id="{262a73db-d55b-467b-88e5-ec729c52b493}">
+    <Declaration><![CDATA[TYPE structWeatherStation :
+STRUCT
+	{attribute addProperty Name "<#Station name (ICAO)#>"}	
+	StationICAO : STRING(4);
+	{attribute addProperty Name "<#Station status#>"}
+    StationStatus : enumStationStatus; 
+	{attribute addProperty Name "<#Dew Point#>"}	
+	{attribute addProperty Units "°C"}
+	DewPoint : REAL;
+	{attribute addProperty Name "<#Pressure#>"}
+    {attribute addProperty Units "Torr"}	
+	Pressure : REAL;
+	{attribute addProperty Name "<#Temperature#>"}
+	{attribute addProperty Units "°C"}
+	Temp : REAL;
+	{attribute addProperty Name "<#Visibility#>"}
+    {attribute addProperty Units "km"}	
+	Visibility : REAL;			
+	{attribute addProperty Name "<#Wind heading#>"}
+    {attribute addProperty Units "Azimuth"}	
+	WindHeading : UINT;	
+	{attribute addProperty Name "<#Wind speed#>"}
+    {attribute addProperty Units "m/s"}	
+	WindSpeed : REAL;	
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

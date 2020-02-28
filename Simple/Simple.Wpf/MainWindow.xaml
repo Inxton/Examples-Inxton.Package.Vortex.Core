@@ -9,7 +9,7 @@
         DataContext="{x:Static local:App.Hans}">
     <Grid DataContext="{Binding prgSimple, Mode=OneWay}">
         <Canvas>
-            <TextBlock Canvas.Left="287" TextWrapping="Wrap" Canvas.Top="31" Text="{Binding _counter.Cyclic}" FontSize="48"></TextBlock>
+            <TextBlock Canvas.Left="284" TextWrapping="Wrap" Canvas.Top="29" Text="{Binding _counter.Cyclic}" FontSize="48"><Run Text="0"/></TextBlock>
             <CheckBox Content="Counter active" Canvas.Left="245" Canvas.Top="122" IsChecked="{Binding _counterActive.Cyclic}"/>
             <Button Content="Reset counter" Canvas.Left="242" Canvas.Top="156" Width="101" Height="24" Click="Button_Click"/>
         </Canvas>

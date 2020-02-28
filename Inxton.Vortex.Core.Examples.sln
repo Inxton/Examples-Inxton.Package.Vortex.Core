@@ -30,7 +30,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddedPropeties", "AddedProp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddedProperties.Wpf", "AddedProperties\AddedProperties\AddedProperties.Wpf.csproj", "{E5EA2BFA-3ED4-4010-9C47-B32F9347C13F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddedProperties.Console", "AddedProperties.Console\AddedProperties.Console.csproj", "{BD253568-608C-45A6-9DF7-1B778D955668}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddedProperties.Console", "AddedProperties\AddedProperties.Console\AddedProperties.Console.csproj", "{BD253568-608C-45A6-9DF7-1B778D955668}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

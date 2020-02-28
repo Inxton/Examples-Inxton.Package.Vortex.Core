@@ -44,16 +44,6 @@ END_VAR
 Append REF= THIS^;]]></ST>
       </Implementation>
     </Method>
-    <Method Name="Construct" Id="{54214789-a50e-4a74-ab39-1cc58fefd769}">
-      <Declaration><![CDATA[METHOD Construct : REFERENCE TO fbFluentString
-
-]]></Declaration>
-      <Implementation>
-        <ST><![CDATA[_resultString := '';
-Construct REF= THIS^;
-]]></ST>
-      </Implementation>
-    </Method>
     <Property Name="Result" Id="{dc40d10e-1859-4a54-8a27-9aeb12aba65d}">
       <Declaration><![CDATA[PROPERTY Result : STRING(255)]]></Declaration>
       <Get Name="Get" Id="{cc4065a5-546d-47eb-8dd1-610c0cb72af3}">
@@ -61,7 +51,8 @@ Construct REF= THIS^;
 END_VAR
 ]]></Declaration>
         <Implementation>
-          <ST><![CDATA[Result := _resultString;]]></ST>
+          <ST><![CDATA[Result := _resultString;
+_resultString := '';]]></ST>
         </Implementation>
       </Get>
       <Set Name="Set" Id="{16a8541c-69aa-41e4-8241-9b177b343926}">
@@ -77,12 +68,9 @@ END_VAR
       <LineId Id="5" Count="0" />
       <LineId Id="7" Count="0" />
     </LineIds>
-    <LineIds Name="fbFluentString.Construct">
-      <LineId Id="7" Count="0" />
-      <LineId Id="5" Count="1" />
-    </LineIds>
     <LineIds Name="fbFluentString.Result.Get">
       <LineId Id="2" Count="0" />
+      <LineId Id="5" Count="0" />
     </LineIds>
     <LineIds Name="fbFluentString.Result.Set">
       <LineId Id="2" Count="0" />

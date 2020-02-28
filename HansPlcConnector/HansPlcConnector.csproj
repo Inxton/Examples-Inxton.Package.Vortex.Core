@@ -122,8 +122,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="..\_Vortex\out\HansPlc\loc\Localizations.ar.resx">
+      <Link>Properties\Localizations.ar.resx</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="..\_Vortex\out\HansPlc\loc\Localizations.de.resx">
       <Link>Properties\Localizations.de.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\_Vortex\out\HansPlc\loc\Localizations.fr.resx">
+      <Link>Properties\Localizations.fr.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\_Vortex\out\HansPlc\loc\Localizations.he.resx">
+      <Link>Properties\Localizations.he.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\_Vortex\out\HansPlc\loc\Localizations.ja.resx">
+      <Link>Properties\Localizations.ja.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\_Vortex\out\HansPlc\loc\Localizations.ru.resx">
+      <Link>Properties\Localizations.ru.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\_Vortex\out\HansPlc\src\singles\..\..\loc\Localizations.resx">
       <Link>Properties\Localizations.resx</Link>

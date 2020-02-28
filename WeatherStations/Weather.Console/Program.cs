@@ -36,9 +36,10 @@
             // Kicks out operations for HansPlc
             Hans.Connector.BuildAndStart();
 
-            // Set culture
-            SetCulture("en");
-            // SetCulture("de");
+            // SetCulture("en"); // Default
+            // SetCulture("de"); // Uncomment for German
+            // SetCulture("fr"); // Uncomment for French
+          
 
             // Reading modes
             new CyclicAccess(Hans).DoIt();

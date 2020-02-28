@@ -5,11 +5,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Weather.Wpf"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:properties="clr-namespace:Weather.Wpf.Properties"
     Width="800"
     Height="450"
     mc:Ignorable="d"
     DataContext="{x:Static local:App.Hans}"
-    Title="MainWindow">
+    Title="{x:Static properties:Resources.PlcsOpinionOnWeather}">
     <Grid DataContext="{Binding prgWeatherStations._weatherStationsCyclicAccess}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
@@ -55,7 +56,7 @@
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
-        <GroupBox Header="This is the comment about weather made by the PLC :)" Grid.Row="1">
+        <GroupBox Header="{x:Static properties:Resources.ThisIsTheCommentAboutWeatherMadeByThePLC}" Grid.Row="1">
             <TextBlock Margin="10" TextWrapping="WrapWithOverflow" FontSize="15" 
                        FontWeight="Bold" 
                        HorizontalAlignment="Stretch" 
@@ -63,7 +64,7 @@
                        Text="{Binding PlcCommentOnCurrentWeather.Cyclic}"></TextBlock>
         </GroupBox>
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center">
-            <Button Click="Button_Click">UPDATE</Button>
+            <Button Click="Button_Click" Margin="5" Width="100" Height="50" Content="{x:Static properties:Resources.Update}"/>
         </WrapPanel>
     </Grid>
 </Window>

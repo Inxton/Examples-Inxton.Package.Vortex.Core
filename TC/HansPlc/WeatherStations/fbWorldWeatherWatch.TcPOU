@@ -19,49 +19,49 @@ END_VAR
     <Implementation>
       <ST><![CDATA[(* PLC IS COMMENTING ON WEATHER, GETTING INFORMATION FROM WEATHER STATIONS FROM ARROUND THE WORLD *)
 
-Utils.FluentString.Construct().Append('So, the weather situation is following: ');
+Utils.FluentString.Append('<#So, the weather situation is following#>: ');
 
 IF (NorthPole.StationStatus = enumStationStatus.Available) THEN
 	IF(NorthPole.Temp > -50) THEN
-		Utils.FluentString.Append('It is fairly warm at the north pole. ');
+		Utils.FluentString.Append('<#It is fairly warm at the north pole.#> ');
 	ELSE
-		Utils.FluentString.Append('It is as cold as it should be at the nort pole. ');
+		Utils.FluentString.Append('<#It is as cold as it should be at the nort pole.#> ');
 	END_IF;
 ELSE;
-	Utils.FluentString.Append('North pole station is not available. ');
+	Utils.FluentString.Append('<#North pole station is not available.#> ');
 END_IF; 
 
 
 IF (SouthPole.StationStatus = enumStationStatus.Available) THEN
 	IF(SouthPole.Temp > -50) THEN
-		Utils.FluentString.Append('It is fairly warm at the south pole. ');
+		Utils.FluentString.Append('<#It is fairly warm at the south pole.#> ');
 	ELSE
-		Utils.FluentString.Append('It is as cold as it should be at the souht pole. ');
+		Utils.FluentString.Append('<#It is as cold as it should be at the souht pole.#> ');
 	END_IF; 
 ELSE;
-	Utils.FluentString.Append('South pole station is not available. ');
+	Utils.FluentString.Append('<#South pole station is not available.#> ');
 END_IF; 
 
 
 IF (Verl.StationStatus = enumStationStatus.Available) THEN
 	IF(Verl.Temp > 0) THEN
-		Utils.FluentString.Append('It is not freezing in Verl. ');
+		Utils.FluentString.Append('<#It is not freezing in Verl.#> ');
 	ELSE
-		Utils.FluentString.Append('It is freezing in Verl. ');
+		Utils.FluentString.Append('<#It is freezing in Verl.#> ');
 	END_IF; 
 ELSE;
-	Utils.FluentString.Append('Verl station is not available. ');
+	Utils.FluentString.Append('<#Verl station is not available.#> ');
 END_IF; 
 
 
 IF (Kriva.StationStatus = enumStationStatus.Available) THEN
 	IF(Kriva.Temp > 0) THEN
-		Utils.FluentString.Append('It is not freezing in Kriva. ');
+		Utils.FluentString.Append('<#It is not freezing in Kriva.#> ');
 	ELSE
-		Utils.FluentString.Append('It is freezing in Kriva. ');
+		Utils.FluentString.Append('<#It is freezing in Kriva.#> ');
 	END_IF; 
 ELSE;
-	Utils.FluentString.Append('Kriva station is not available. ');
+	Utils.FluentString.Append('<#Kriva station is not available.#> ');
 END_IF; 
 
 PlcCommentOnCurrentWeather := Utils.FluentString.Result;

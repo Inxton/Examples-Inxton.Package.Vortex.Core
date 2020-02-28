@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,18 +112,87 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ThisIsTheCommentAboutWeatherMadeByThePLC" xml:space="preserve">
-    <value>This is the comment about weather made by the PLC :)</value>
+  <data name="___North_pole_station__" xml:space="preserve">
+    <value>北極駅！</value>
   </data>
-  <data name="PlcsOpinionOnWeather" xml:space="preserve">
-    <value>Plcs' opinion on Weather</value>
+  <data name="___South_pole_station__" xml:space="preserve">
+    <value>サウスポール駅！</value>
   </data>
-  <data name="Update" xml:space="preserve">
-    <value>Update</value>
+  <data name="___Verl__Germany__" xml:space="preserve">
+    <value>ドイツ</value>
+  </data>
+  <data name="___Kriva__Slovakia__" xml:space="preserve">
+    <value>クリヴァ、スロバキア！</value>
+  </data>
+  <data name="___What_plc_says__" xml:space="preserve">
+    <value>plcの言うこと！</value>
+  </data>
+  <data name="___Station_name__ICAO___" xml:space="preserve">
+    <value>駅名</value>
+  </data>
+  <data name="___Station_status__" xml:space="preserve">
+    <value>ステーションの状態</value>
+  </data>
+  <data name="___Dew_Point__" xml:space="preserve">
+    <value>露点</value>
+  </data>
+  <data name="___Pressure__" xml:space="preserve">
+    <value>気圧</value>
+  </data>
+  <data name="___Temperature__" xml:space="preserve">
+    <value>気温</value>
+  </data>
+  <data name="___Visibility__" xml:space="preserve">
+    <value>表示</value>
+  </data>
+  <data name="___Wind_heading__" xml:space="preserve">
+    <value>見出し</value>
+  </data>
+  <data name="___Wind_speed__" xml:space="preserve">
+    <value>風速</value>
+  </data>
+  <data name="___So__the_weather_situation_is_following__" xml:space="preserve">
+    <value>したがって、気象状況は次のとおりです！</value>
+  </data>
+  <data name="___It_is_fairly_warm_at_the_north_pole___" xml:space="preserve">
+    <value>北極はかなり暖かいです！</value>
+  </data>
+  <data name="___It_is_as_cold_as_it_should_be_at_the_nort_pole___" xml:space="preserve">
+    <value>それは北極点にあるべき寒さです！</value>
+  </data>
+  <data name="___North_pole_station_is_not_available___" xml:space="preserve">
+    <value>北極駅は利用できません。！</value>
+  </data>
+  <data name="___It_is_fairly_warm_at_the_south_pole___" xml:space="preserve">
+    <value>南極はかなり暖かいです！</value>
+  </data>
+  <data name="___It_is_as_cold_as_it_should_be_at_the_souht_pole___" xml:space="preserve">
+    <value>極寒の寒さです！</value>
+  </data>
+  <data name="___South_pole_station_is_not_available___" xml:space="preserve">
+    <value>南極駅は利用できません。！</value>
+  </data>
+  <data name="___It_is_not_freezing_in_Verl___" xml:space="preserve">
+    <value>Verlではフリーズしていません。</value>
+  </data>
+  <data name="___It_is_freezing_in_Verl___" xml:space="preserve">
+    <value>Verl。で凍結しています！</value>
+  </data>
+  <data name="___Verl_station_is_not_available___" xml:space="preserve">
+    <value>Verlステーションは利用できません。！</value>
+  </data>
+  <data name="___It_is_not_freezing_in_Kriva___" xml:space="preserve">
+    <value>Krivaでは凍結していません。！</value>
+  </data>
+  <data name="___It_is_freezing_in_Kriva___" xml:space="preserve">
+    <value>Krivaで凍結しています。</value>
+  </data>
+  <data name="___Kriva_station_is_not_available___" xml:space="preserve">
+    <value>Krivaステーションは利用できません。！</value>
   </data>
 </root>

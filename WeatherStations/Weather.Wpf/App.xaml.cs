@@ -23,13 +23,20 @@ namespace Weather.Wpf
         /// Ams port of HansPlc
         /// </summary>
         const int AmsPort = 851;
-
+        
         public App()
         {
             Hans.Connector.BuildAndStart();
 
-            SetCulture("en");
-            // SetCulture("de");
+            // Uncomment/Comment to change language of the application
+
+            // SetCulture("en"); // Default
+            // SetCulture("de"); // Uncomment for German
+            // SetCulture("fr"); // Uncomment for French
+            // SetCulture("ru"); // Uncomment for Russian
+            // SetCulture("ja"); // Uncomment for Japanese
+            // SetCulture("he"); // Uncomment for Hebrew
+            // SetCulture("ar"); // Uncomment for Arabic
         }
 
         /// <summary>

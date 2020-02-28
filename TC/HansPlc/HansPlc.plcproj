@@ -23,19 +23,19 @@
     <Compile Include="AddedProperties\prgAddedProperties.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="PlcTask.TcTTO">
+    <Compile Include="MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\MAIN.TcPOU">
+    <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Simple\prgSimple.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Utils\fbFluentString.TcPOU">
+    <Compile Include="_Utils\fbFluentString.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Utils\Utils.TcGVL">
+    <Compile Include="_Utils\Utils.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>
@@ -53,13 +53,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DUTs" />
     <Folder Include="AddedProperties" />
     <Folder Include="Simple" />
     <Folder Include="WeatherStations" />
-    <Folder Include="Utils" />
-    <Folder Include="VISUs" />
-    <Folder Include="POUs" />
+    <Folder Include="_Utils" />
   </ItemGroup>
   <ItemGroup>
     <PlaceholderReference Include="Tc2_Standard">

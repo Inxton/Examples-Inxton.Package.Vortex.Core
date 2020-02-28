@@ -198,4 +198,6 @@ _Libraries/
 *.tmy
 *.tpy
 
-_Vortex/**
+_Vortex/*.dll
+_Vortex/*.exe
+_Vortex/builder/**

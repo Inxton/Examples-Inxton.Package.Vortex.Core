@@ -35,7 +35,7 @@ namespace Weather.Wpf
             // SetCulture("fr"); // Uncomment for French
             // SetCulture("ru"); // Uncomment for Russian
             // SetCulture("ja"); // Uncomment for Japanese
-            // SetCulture("he"); // Uncomment for Hebrew
+            // SetCulture("he"); //  for Hebrew
             // SetCulture("ar"); // Uncomment for Arabic
         }
 

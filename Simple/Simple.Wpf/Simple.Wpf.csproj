@@ -123,7 +123,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HansPlcConnector\HansPlcConnector.csproj">
+    <ProjectReference Include="..\..\HansPlcConnector\HansPlcConnector.csproj">
       <Project>{9ae6bc87-464c-4b4a-ad99-596b9f167676}</Project>
       <Name>HansPlcConnector</Name>
     </ProjectReference>

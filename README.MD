@@ -12,9 +12,21 @@ The inxton.vortex.compiler trans-piles the Plc program creating a PLC's twin on 
 
 See documentation for [Inxton.Package.Vortex.Core](https://github.com/Inxton/documentation/blob/master/Inxton.Package.Vortex.Core/README.MD)
 
+## Packages update
+
+When you clone this repository it comes without nuget packages. You will need to restore them from nuget.org.
+Open 'Package Manager Console' and type
+
+~~~ PowerShell
+PS> Update-Package -Reinstall
+~~~
+
+[![Video instruction here](https://img.youtube.com/vi/11e8PGABB_U/0.jpg)](https://www.youtube.com/watch?v=11e8PGABB_U&feature=youtu.be "Update packages")
+
+
 ## Examples
 
-When you exlpore the this repository you will find that we have a XAE project that contains 'HansPlc' program. 'HansPlc' program has its .net twin project called 'HansPlcConnector'. This two project constitute the starting point for all subsequent examples.
+When you explore the this repository you will find that we have a XAE project that contains 'HansPlc' program. 'HansPlc' program has its .net twin project called 'HansPlcConnector'. This two project constitute the starting point for all subsequent examples.
 
 ### Simple
 

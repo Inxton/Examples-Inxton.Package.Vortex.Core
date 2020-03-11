@@ -30,7 +30,7 @@ namespace AddedProperties.Console
             obj.Read();
 
             while (command != 'Q')
-            {
+            {                
                 System.Console.WriteLine("************************************************************************");
                 System.Console.WriteLine($"{obj.fbDriveX.Position.AttributeName}:{obj.fbDriveX.Position.Cyclic} {obj.fbDriveX.Position.AttributeUnits}");
                 System.Console.WriteLine($"{obj.fbDriveX.Speed.AttributeName}:{obj.fbDriveX.Speed.Cyclic} {obj.fbDriveX.Speed.AttributeUnits}");

@@ -13,7 +13,7 @@ In addition this project demonstrates the ability to localize PLC strings in eas
 
 # Need help?
 
-🧪 Or create an issue [here](https://github.com/Inxton/Feedback/issues/new/choose)
+🧪 Create an issue [here](https://github.com/Inxton/Feedback/issues/new/choose)
 
 📫 We use mail too team@inxton.com 
 

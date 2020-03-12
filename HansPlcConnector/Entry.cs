@@ -1,4 +1,4 @@
-﻿#define REMOTE
+﻿#define REMOTE // Comment if your target is localhost
 
 using HansPlc;
 using System;
@@ -16,7 +16,7 @@ namespace HansPlc
         /// <summary>
         /// Target system ams id.
         /// </summary>
-        const string AmsId = "172.20.10.102.1.1"; // set to 'null' if local
+        const string AmsId = "172.20.10.102.1.1"; // your ams id or set to 'null' if local
 
         /// <summary>
         /// Port of the target system.

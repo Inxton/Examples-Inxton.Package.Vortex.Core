@@ -17,7 +17,7 @@ Inxton is reading the variable from PLC and displaying it
 
 # Need help?
 
-🧪 Or create an issue [here](https://github.com/Inxton/Feedback/issues/new/choose)
+🧪 Create an issue [here](https://github.com/Inxton/Feedback/issues/new/choose)
 
 📫 We use mail too team@inxton.com 
 

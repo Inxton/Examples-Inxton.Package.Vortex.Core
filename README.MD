@@ -29,13 +29,61 @@ When you explore the solution you will find that we have a XAE project that cont
 Open Nuget manage for solution and restore missing packages.
 ![update_packages](./assets/update_packages.gif)
 
-
 ## Activate the configuration
 
-Activate your configuration, download the PLC to the localhost and run it as any other TwinCAT 3 project. You will need to set the target system to the target you have available (e.g. local)
+Activate your configuration, download the PLC to your target system and run it as any other TwinCAT 3 project. You will need to set the target system to the target you have available (e.g. local)
+
+## Set up HansPlcCo*ntroller project
+
+You will need to set up *AMS ID* and *port* (if changed for some reason). Open file ```../HansPlcConnector/Entry.cs```
+
+~~~ C#
+#define REMOTE // Comment if your target is localhost
+
+using HansPlc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Vortex.Adapters.Connector.Tc3.Adapter;
+
+namespace HansPlc
+{
+    public static class Entry
+    {
+#if REMOTE
+        /// <summary>
+        /// Target system ams id.
+        /// </summary>
+        const string AmsId = "172.20.10.102.1.1"; // your ams id or set to 'null' if local
+
+        /// <summary>
+        /// Port of the target system.
+        /// </summary>
+        const int Port = 851;
+#else
+        /// <summary>
+        /// Target system ams id. (local)
+        /// </summary>
+        const string AmsId = null
+
+        /// <summary>
+        /// Port of the target system.
+        /// </summary>
+        const int Port = 851;
+
+#endif
+
+        public static HansPlcTwinController HansPlc { get; } = new HansPlcTwinController(Tc3ConnectorAdapter.Create(AmsId, Port));
+
+    }
+}
+~~~
 
 ## Select the project you want to try
 
+Set the project you would like to try as *StartUp project* and run the project.
 
 ## What to do next?
 
@@ -51,7 +99,6 @@ Inxton.Compiler generates one to one C# objects from TwinCAT3 PLC project so you
 
 You can checkout what you can do with it on [YouTube](https://www.youtube.com/channel/UCB3EcnWyLSsV5gqSt8PRDXA/featured) - basicly your PLC has all the PC capabilites.
 
-
 ## Getting Started examples
 
 This repository contains several projects and examples to get you started with the basics of Inxton.Vortex.Framework.
@@ -62,22 +109,9 @@ Even though the core package is the most elementary part of the framework it off
 
 The inxton.vortex.compiler trans-piles the Plc program creating a PLC's twin on .net side. This approach represents streamlined, consistent, scalable and fast way of working with PLC data in structured manner. It preserves the deterministic behavior of the PLC yet does not limit the developer's options to the PLC resources.
 
-
 ## Prerequisites
 
 See documentation for [Inxton.Package.Vortex.Core](https://github.com/Inxton/documentation/blob/master/Inxton.Package.Vortex.Core/README.MD)
-
-## Packages update
-
-When you clone this repository it comes without nuget packages. You will need to restore them from nuget.org.
-Open 'Package Manager Console' and type
-
-~~~ PowerShell
-PS> Update-Package -Reinstall
-~~~
-
-[![Video instruction here](https://img.youtube.com/vi/11e8PGABB_U/0.jpg)](https://www.youtube.com/watch?v=11e8PGABB_U&feature=youtu.be "Update packages")
-
 
 ## Examples
 
@@ -110,7 +144,7 @@ In addition this project demonstrates the ability to localize PLC strings in eas
 
 # Need help?
 
-🧪 Or create an issue [here](https://github.com/Inxton/Feedback/issues/new/choose)
+🧪 Create an issue [here](https://github.com/Inxton/Feedback/issues/new/choose)
 
 📫 We use mail too team@inxton.com 
 

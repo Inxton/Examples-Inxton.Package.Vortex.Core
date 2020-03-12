@@ -33,7 +33,7 @@ Open Nuget manage for solution and restore missing packages.
 
 Activate your configuration, download the PLC to your target system and run it as any other TwinCAT 3 project. You will need to set the target system to the target you have available (e.g. local)
 
-## Set up HansPlcCo*ntroller project
+## Set up HansPlcController project
 
 You will need to set up *AMS ID* and *port* (if changed for some reason). Open file ```../HansPlcConnector/Entry.cs```
 

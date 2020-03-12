@@ -18,7 +18,7 @@
         {
 
             // Creates an instance of HansPlc twin controller with TwinCat3 adapter.
-            var hans = new HansPlc.HansPlcTwinController(Vortex.Adapters.Connector.Tc3.Adapter.Tc3ConnectorAdapter.Create(AmsId, Port));
+            var hans = HansPlc.Entry.HansPlc;
 
             // This starts the operation on the TwinController. Without this call the twin controller instance is created but does not run the comm. operations.
             hans.Connector.BuildAndStart();

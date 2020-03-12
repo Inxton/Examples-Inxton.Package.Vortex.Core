@@ -117,6 +117,7 @@
     <Compile Include="..\_Vortex\out\HansPlc\src\singles\Utils.g.cs">
       <Link>_generated\HansPlc\Utils.g.cs</Link>
     </Compile>
+    <Compile Include="Entry.cs" />
     <Compile Include="pex\fbWorldWeatherWatch.cs" />
     <Compile Include="pex\structWeatherStation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

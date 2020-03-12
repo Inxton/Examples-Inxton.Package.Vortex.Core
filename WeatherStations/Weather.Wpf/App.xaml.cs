@@ -12,18 +12,7 @@ namespace Weather.Wpf
     /// Interaction logic for App.xaml
     /// </summary>
     public partial class App : Application
-    {
-
-        /// <summary>
-        /// Ams id of target system.        
-        /// </summary>
-        const string AmsId = "172.20.10.102.1.1"; // null for local
-
-        /// <summary>
-        /// Ams port of HansPlc
-        /// </summary>
-        const int AmsPort = 851;
-        
+    {               
         public App()
         {
             Hans.Connector.BuildAndStart();
@@ -49,6 +38,6 @@ namespace Weather.Wpf
             System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(culture);
         }
 
-        public static HansPlc.HansPlcTwinController Hans { get; } = new HansPlc.HansPlcTwinController(Vortex.Adapters.Connector.Tc3.Adapter.Tc3ConnectorAdapter.Create(AmsId, AmsPort, true));
+        public static HansPlc.HansPlcTwinController Hans { get; } = HansPlc.Entry.HansPlc;
     }
 }

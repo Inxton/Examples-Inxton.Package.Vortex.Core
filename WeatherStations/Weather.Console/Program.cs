@@ -10,22 +10,12 @@
     class Program
     {
         /// <summary>
-        /// Ams id of target system.        
-        /// </summary>
-        const string AmsId = "172.20.10.102.1.1"; // null for local
-
-        /// <summary>
-        /// Ams port of HansPlc
-        /// </summary>
-        const int AmsPort = 851;
-
-        /// <summary>
         /// Gets the Twin Controller of 'HansPlc'.
         /// </summary>
         static HansPlcTwinController Hans
         {
             get;
-        } = new HansPlc.HansPlcTwinController(Vortex.Adapters.Connector.Tc3.Adapter.Tc3ConnectorAdapter.Create(AmsId, AmsPort, false));
+        } = HansPlc.Entry.HansPlc;
 
         /// <summary>
         /// Main app entry.

@@ -1,4 +1,56 @@
-# Getting Started examples
+![Inxton logo](.\assets\logo.png)
+
+# Welcome
+
+This repo contains a single solution with various project that aim to demonstrate features of Core package of Inxton.Vortex.Framework.
+
+# Getting started
+
+## Check the prerequisites
+
+Make sure you have everything you need to start using examples in this repository [here](https://github.com/Inxton/documentation/blob/master/PREREQUISITES.MD).
+
+## Clone this repository
+
+~~~ bash
+git clone https://github.com/Inxton/Examples-Inxton.Package.Vortex.Core.git
+~~~
+
+Or download zip [here](https://github.com/Inxton/Examples-Inxton.Package.Vortex.Core/archive/master.zip)
+
+## Open the solution
+
+ ```Inxton.Vortex.Core.Examples.sln	```
+
+When you explore the solution you will find that we have a XAE project that contains ``HansPlc`` program. ```HansPlc``` program has its .NET Twin project called ```HansPlcConnector```. This two projects constitute the starting point for all subsequent examples.
+
+## Restore packages
+
+Open Nuget manage for solution and restore missing packages.
+
+## Activate the configuration
+
+Activate your configuration, download the PLC to the localhost and run it as any other TwinCAT 3 project. You will need to set the target system to the target you have available (e.g. local)
+
+## Select the project you want to try
+
+## What to do next?
+
+Checkout documentation  [Inxton.Package.Vortex.Core](https://github.com/Inxton/documentation)
+
+Install the extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Inxton.InxtonVortexBuilderExtensionPre)
+
+## Compiler
+
+Inxton.Compiler generates one to one C# objects from TwinCAT3 PLC project so you can use any .net project to access PLC data.
+
+![inxton_transpile.gif](.\assets\inxton_transpile.gif)
+
+You can checkout what you can do with it on [YouTube](https://www.youtube.com/channel/UCB3EcnWyLSsV5gqSt8PRDXA/featured) - basicly your PLC has all the PC capabilites.
+
+
+
+## Getting Started examples
 
 This repository contains several projects and examples to get you started with the basics of Inxton.Vortex.Framework.
 
@@ -47,3 +99,35 @@ In this example we are showing the ease with which you can use the power of .net
 Console application shows different ways to access PLCs' variables (Cyclical, Synchronous, Batched). There are descriptive comments in the code that should help you grasp basic concepts.
 
 In addition this project demonstrates the ability to localize PLC strings in easy and straightforward way. The framework takes care of translating PLC STRING, WSTRING at runtime using applications' resources. Notice that localizable PLC strings are enclosed between <# and #>.
+
+
+# Need help?
+
+🧪 Or create an issue [here](https://github.com/Inxton/Feedback/issues/new/choose)
+
+📫 We use mail too team@inxton.com 
+
+🐤 Contact us on Twitter [@Inxton](https://twitter.com/inxtonteam)
+
+📽 Checkout our [YouTube](https://www.youtube.com/channel/UCB3EcnWyLSsV5gqSt8PRDXA/featured)
+
+🌐 For more info check out our website [INXTON.com](https://www.inxton.com/)
+
+
+# Contributing
+
+We are more than happy to hear your feedback, ideas!
+Just submit it [here](https://github.com/Inxton/Feedback/issues/new/choose)  
+
+
+# License
+tldr
+> Developers are encouraged to use this project -  free of charge, although when you want to use it in production enviroment you need to go to  [INXTON.com](https://www.inxton.com/) and purchase a licence.
+
+to make our lawyers happy - read the whole licence agreement [here](https://github.com/Inxton/about/blob/master/license.md)
+
+
+
+---
+Developed with ♥ at [MTS](https://www.mts.sk/) - putting the heart into manufacturing
+ 

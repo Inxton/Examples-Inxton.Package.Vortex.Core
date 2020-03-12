@@ -129,5 +129,5 @@ to make our lawyers happy - read the whole licence agreement [here](https://gith
 
 
 ---
-Developed with ♥ at [MTS](https://www.mts.sk/) - putting the heart into manufacturing
+Developed with ♥ at [MTS](https://www.mts.sk/) - putting the heart into manufacturing.
  

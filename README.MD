@@ -1,4 +1,4 @@
-![Inxton logo](.\assets\logo.png)
+![Inxton logo](./assets/logo.png)
 
 # Welcome
 

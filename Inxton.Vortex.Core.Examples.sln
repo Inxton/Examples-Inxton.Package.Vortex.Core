@@ -8,8 +8,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HansPlcConnector", "HansPlcConnector\HansPlcConnector.csproj", "{9AE6BC87-464C-4B4A-AD99-596B9F167676}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WeatherStations", "WeatherStations", "{B75D49D5-B125-4419-90F1-7C4FB2314A38}"
+	ProjectSection(SolutionItems) = preProject
+		WeatherStations\README.MD = WeatherStations\README.MD
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simple", "Simple", "{DE5CD1A2-4D41-40ED-BBDE-00A6C75519A9}"
+	ProjectSection(SolutionItems) = preProject
+		Simple\README.MD = Simple\README.MD
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Console", "WeatherStations\Weather.Console\Weather.Console.csproj", "{84F7E82F-9855-4417-9FB1-D3858E0DF3BD}"
 EndProject
@@ -25,6 +31,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.WinForms", "Simple\Simple.WinForms\Simple.WinForms.csproj", "{702F5CD1-895E-40BC-B519-A32129448E17}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddedPropeties", "AddedPropeties", "{7B55F92A-9105-4226-A014-C9265C7CE6BD}"
+	ProjectSection(SolutionItems) = preProject
+		AddedProperties\README.MD = AddedProperties\README.MD
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddedProperties.Wpf", "AddedProperties\AddedProperties\AddedProperties.Wpf.csproj", "{E5EA2BFA-3ED4-4010-9C47-B32F9347C13F}"
 EndProject

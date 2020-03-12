@@ -93,11 +93,11 @@ Install the extension from [Visual Studio Marketplace](https://marketplace.visua
 
 ## Compiler
 
-Inxton.Compiler generates one to one C# objects from TwinCAT3 PLC project so you can use any .net project to access PLC data.
+We need to spend a word here about Inxton.Vortex.Compiler. It is one of the founding blocks of the Inxton.Vortex.Framework. It provides one to one C# objects from TwinCAT3 PLC program so you can use any .net based platform to access PLC data.
 
 ![inxton_transpile.gif](./assets/inxton_transpile.gif)
 
-You can checkout what you can do with it on [YouTube](https://www.youtube.com/channel/UCB3EcnWyLSsV5gqSt8PRDXA/featured) - basicly your PLC has all the PC capabilites.
+More about compiler [here](https://github.com/Inxton/documentation/blob/master/Inxton.vortex.compiler.console/README.md).
 
 ## Getting Started examples
 

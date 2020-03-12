@@ -27,7 +27,7 @@ When you explore the solution you will find that we have a XAE project that cont
 ## Restore packages
 
 Open Nuget manage for solution and restore missing packages.
-![update_packages](.\assets\update_packages.gif)
+![update_packages](./assets/update_packages.gif)
 
 
 ## Activate the configuration
@@ -47,7 +47,7 @@ Install the extension from [Visual Studio Marketplace](https://marketplace.visua
 
 Inxton.Compiler generates one to one C# objects from TwinCAT3 PLC project so you can use any .net project to access PLC data.
 
-![inxton_transpile.gif](.\assets\inxton_transpile.gif)
+![inxton_transpile.gif](./assets/inxton_transpile.gif)
 
 You can checkout what you can do with it on [YouTube](https://www.youtube.com/channel/UCB3EcnWyLSsV5gqSt8PRDXA/featured) - basicly your PLC has all the PC capabilites.
 
@@ -83,30 +83,30 @@ PS> Update-Package -Reinstall
 
 When you explore the this repository you will find that we have a XAE project that contains 'HansPlc' program. 'HansPlc' program has its .net twin project called 'HansPlcConnector'. This two project constitute the starting point for all subsequent examples.
 
-### [Simple](.\Simple\README.md)
+### [Simple](./Simple/README.md)
 
 *Simple* examples have a rudimentary plc counter. We aimed to show basic manipulation with twins of the PLC. Accessing variables, reading, writing, displaying (WPF, and WinForms).
 
 > REMARKS: It is possible to use WinForms to create the valuable applications. WinForm offers simple approach, you might be more familiar with the technology. On the other hand it requires more manual coding. If you want, however get the best from the framework consider starting with WPF. WPF offers very powerful data binding, styling, templates, effective work with components. WPF on the other hand has usually slowly climbing learning curve for classical programmers. It is however worth the effort.
 
-![Inxton logo](.\assets\SimpleCounter.gif)
+![Inxton logo](./assets/SimpleCounter.gif)
 
-### [AddedProperties](.\AddedProperties\README.md)
+### [AddedProperties](./AddedProperties/README.md)
 
 This example is trying to expose the feature that allows you to introduce additional properties to twin objects in the PLC code. This feature is part of wider idea that is called "Single Point of Change" (SPOC).
 
 > In short SPOC tends to keep the changes in a single place (which in this instance is the source code of the PLC program), later in more advanced packages we will show how this concept keeps the solutions clean and consistent yet at the same time it takes a lot of workload away from the developer.
 
 
-![Inxton logo](.\assets\addedPropertyUse1.png)
-### [Weather stations](.\WeatherStations\README.md)
+![Inxton logo](./assets/addedPropertyUse1.png)
+### [Weather stations](./WeatherStations/README.md)
 
 In this example we are showing the ease with which you can use the power of .net ecosystem with the PLC. We are reading the data from some weather stations from around the world (via .net library) and we pass the data to the PLC. Plc then makes its own statements about the weather situation in different parts of the world.
 
 Console application shows different ways to access PLCs' variables (Cyclical, Synchronous, Batched). There are descriptive comments in the code that should help you grasp basic concepts.
 
 In addition this project demonstrates the ability to localize PLC strings in easy and straightforward way. The framework takes care of translating PLC STRING, WSTRING at runtime using applications' resources. Notice that localizable PLC strings are enclosed between <# and #>.
-![Inxton logo](.\assets\weather_wpf.png)
+![Inxton logo](./assets/weather_wpf.png)
 
 # Need help?
 

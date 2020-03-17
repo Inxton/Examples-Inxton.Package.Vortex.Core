@@ -29,6 +29,12 @@ When you explore the solution you will find that we have a XAE project that cont
 Open Nuget manage for solution and restore missing packages.
 ![update_packages](./assets/update_packages.gif)
 
+## Update Packages
+In case you have any problems with NuGet :
+Open *Package Manager Console* and type:
+~~~PowerShell
+Update-Package -Reinstall
+~~~
 ## Activate the configuration
 
 Activate your configuration, download the PLC to your target system and run it as any other TwinCAT 3 project. You will need to set the target system to the target you have available (e.g. local)

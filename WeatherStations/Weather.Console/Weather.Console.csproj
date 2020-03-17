@@ -37,10 +37,10 @@
       <HintPath>..\..\packages\CsvHelper.15.0.1\lib\net47\CsvHelper.dll</HintPath>
     </Reference>
     <Reference Include="Inxton.Licencing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3bf43df27f52305d, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Inxton.Vortex.Connector.0.111.0-preview.4\lib\netstandard2.0\Inxton.Licencing.dll</HintPath>
+      <HintPath>..\..\packages\Inxton.Vortex.Connector.0.112.0-preview.7\lib\netstandard2.0\Inxton.Licencing.dll</HintPath>
     </Reference>
     <Reference Include="Inxton.Package.Vortex.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Inxton.Package.Vortex.Core.0.111.0-preview.4\lib\netstandard2.0\Inxton.Package.Vortex.Core.dll</HintPath>
+      <HintPath>..\..\packages\Inxton.Package.Vortex.Core.0.113.2-preview.1\lib\netstandard2.0\Inxton.Package.Vortex.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -82,14 +82,14 @@
     <Reference Include="UnitsNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f8601875a1f041da, processorArchitecture=MSIL">
       <HintPath>..\..\packages\UnitsNet.4.52.0\lib\net40\UnitsNet.dll</HintPath>
     </Reference>
-    <Reference Include="Vortex.Adapters.Connector.Tc3, Version=0.111.0.0, Culture=neutral, PublicKeyToken=dfa781ee5783a74c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Inxton.Vortex.Adapters.Connector.Tc3.0.111.0-preview.4\lib\netstandard2.0\Vortex.Adapters.Connector.Tc3.dll</HintPath>
+    <Reference Include="Vortex.Adapters.Connector.Tc3, Version=0.112.0.0, Culture=neutral, PublicKeyToken=dfa781ee5783a74c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Inxton.Vortex.Adapters.Connector.Tc3.0.112.0-preview.7\lib\netstandard2.0\Vortex.Adapters.Connector.Tc3.dll</HintPath>
     </Reference>
     <Reference Include="vortex.compiler.console.placeholder, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Inxton.vortex.compiler.console.0.111.0-preview.4\lib\netstandard2.0\vortex.compiler.console.placeholder.dll</HintPath>
+      <HintPath>..\..\packages\Inxton.vortex.compiler.console.0.112.0-preview.5\lib\netstandard2.0\vortex.compiler.console.placeholder.dll</HintPath>
     </Reference>
-    <Reference Include="Vortex.Connector, Version=0.111.0.0, Culture=neutral, PublicKeyToken=9f2602fd14098343, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Inxton.Vortex.Connector.0.111.0-preview.4\lib\netstandard2.0\Vortex.Connector.dll</HintPath>
+    <Reference Include="Vortex.Connector, Version=0.112.0.0, Culture=neutral, PublicKeyToken=9f2602fd14098343, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Inxton.Vortex.Connector.0.112.0-preview.7\lib\netstandard2.0\Vortex.Connector.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

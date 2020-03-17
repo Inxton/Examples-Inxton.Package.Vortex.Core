@@ -10,7 +10,7 @@
     <Grid DataContext="{Binding prgSimple, Mode=OneWay}">
         <StackPanel>
             <TextBlock TextWrapping="Wrap" Text="{Binding _counter.Cyclic}" FontSize="48" Margin="10" HorizontalAlignment="Center"></TextBlock>
-            <CheckBox Content="Counter active" IsChecked="{Binding _counterActive.Cyclic}" Margin="10" HorizontalAlignment="Center"/>
+            <ToggleButton Content="Counter on/off" IsChecked="{Binding _counterActive.Cyclic}" Margin="13,10,11,10" HorizontalAlignment="Center" Height="23" Width="771"/>
             <Button Content="Reset counter" Click="Button_Click" Margin="10" HorizontalAlignment="Stretch"/>
         </StackPanel>
     </Grid>

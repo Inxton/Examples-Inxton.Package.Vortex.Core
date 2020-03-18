@@ -104,15 +104,15 @@
             {                
                 // Reads Weather Data from the internet.
 
-                //var icao = OpenWeather.MetarStationLookup.Instance.Lookup(station.StationICAO.Synchron);
+                var icao = OpenWeather.MetarStationLookup.Instance.Lookup(station.StationICAO.Synchron);
                                 
-               // station.StationStatus.Cyclic = (short)enumStationStatus.Available;
-               // station.DewPoint.Cyclic = (float)icao.Weather.Dewpoint;
-               // station.Temp.Cyclic = (float)icao.Weather.Temperature;
-               // station.Pressure.Cyclic = (float)icao.Weather.Pressure;
-               // station.WindSpeed.Cyclic = (float)icao.Weather.WindSpeed;
-               // station.WindHeading.Cyclic = (ushort)icao.Weather.WindHeading;
-               // station.Visibility.Cyclic = (float)icao.Weather.Visibility;
+                station.StationStatus.Cyclic = (short)enumStationStatus.Available;
+                station.DewPoint.Cyclic = (float)icao.Weather.Dewpoint;
+                station.Temp.Cyclic = (float)icao.Weather.Temperature;
+                station.Pressure.Cyclic = (float)icao.Weather.Pressure;
+                station.WindSpeed.Cyclic = (float)icao.Weather.WindSpeed;
+                station.WindHeading.Cyclic = (ushort)icao.Weather.WindHeading;
+                station.Visibility.Cyclic = (float)icao.Weather.Visibility;
             }
             catch (Exception ex)
             {

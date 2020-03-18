@@ -55,6 +55,31 @@ namespace HansPlc
 			}
 		}
 
+		structWeatherStation _SouthPole;
+		public structWeatherStation SouthPole
+		{
+			get
+			{
+				return _SouthPole;
+			}
+		}
+
+		IstructWeatherStation IfbWorldWeatherWatch.SouthPole
+		{
+			get
+			{
+				return SouthPole;
+			}
+		}
+
+		IShadowstructWeatherStation IShadowfbWorldWeatherWatch.SouthPole
+		{
+			get
+			{
+				return SouthPole;
+			}
+		}
+
 		structWeatherStation _Verl;
 		public structWeatherStation Verl
 		{
@@ -133,6 +158,7 @@ namespace HansPlc
 		public void LazyOnlineToShadow()
 		{
 			NorthPole.LazyOnlineToShadow();
+			SouthPole.LazyOnlineToShadow();
 			Verl.LazyOnlineToShadow();
 			Kriva.LazyOnlineToShadow();
 			PlcCommentOnCurrentWeather.Shadow = PlcCommentOnCurrentWeather.LastValue;
@@ -141,6 +167,7 @@ namespace HansPlc
 		public void LazyShadowToOnline()
 		{
 			NorthPole.LazyShadowToOnline();
+			SouthPole.LazyShadowToOnline();
 			Verl.LazyShadowToOnline();
 			Kriva.LazyShadowToOnline();
 			PlcCommentOnCurrentWeather.Cyclic = PlcCommentOnCurrentWeather.Shadow;
@@ -150,6 +177,7 @@ namespace HansPlc
 		{
 			var cloned = new PlainfbWorldWeatherWatch();
 			cloned.NorthPole = NorthPole.CreatePlainerType();
+			cloned.SouthPole = SouthPole.CreatePlainerType();
 			cloned.Verl = Verl.CreatePlainerType();
 			cloned.Kriva = Kriva.CreatePlainerType();
 			return cloned;
@@ -158,6 +186,7 @@ namespace HansPlc
 		protected PlainfbWorldWeatherWatch CreatePlainerType(PlainfbWorldWeatherWatch cloned)
 		{
 			cloned.NorthPole = NorthPole.CreatePlainerType();
+			cloned.SouthPole = SouthPole.CreatePlainerType();
 			cloned.Verl = Verl.CreatePlainerType();
 			cloned.Kriva = Kriva.CreatePlainerType();
 			return cloned;
@@ -292,6 +321,8 @@ namespace HansPlc
 			Symbol = Vortex.Connector.IConnector.CreateSymbol(parent.Symbol, symbolTail);
 			_NorthPole = new structWeatherStation(this, "<#North pole station#>", "NorthPole");
 			_NorthPole.AttributeName = "<#North pole station#>";
+			_SouthPole = new structWeatherStation(this, "<#South pole station#>", "SouthPole");
+			_SouthPole.AttributeName = "<#South pole station#>";
 			_Verl = new structWeatherStation(this, "<#Verl, Germany#>", "Verl");
 			_Verl.AttributeName = "<#Verl, Germany#>";
 			_Kriva = new structWeatherStation(this, "<#Kriva, Slovakia#>", "Kriva");
@@ -308,6 +339,8 @@ namespace HansPlc
 			PexPreConstructorParameterless();
 			_NorthPole = new structWeatherStation();
 			_NorthPole.AttributeName = "<#North pole station#>";
+			_SouthPole = new structWeatherStation();
+			_SouthPole.AttributeName = "<#South pole station#>";
 			_Verl = new structWeatherStation();
 			_Verl.AttributeName = "<#Verl, Germany#>";
 			_Kriva = new structWeatherStation();
@@ -336,6 +369,11 @@ namespace HansPlc
 	public partial interface IfbWorldWeatherWatch : Vortex.Connector.IVortexOnlineObject
 	{
 		IstructWeatherStation NorthPole
+		{
+			get;
+		}
+
+		IstructWeatherStation SouthPole
 		{
 			get;
 		}
@@ -374,6 +412,11 @@ namespace HansPlc
 	public partial interface IShadowfbWorldWeatherWatch : Vortex.Connector.IVortexShadowObject
 	{
 		IShadowstructWeatherStation NorthPole
+		{
+			get;
+		}
+
+		IShadowstructWeatherStation SouthPole
 		{
 			get;
 		}
@@ -424,6 +467,20 @@ namespace HansPlc
 			}
 		}
 
+		PlainstructWeatherStation _SouthPole;
+		public PlainstructWeatherStation SouthPole
+		{
+			get
+			{
+				return _SouthPole;
+			}
+
+			set
+			{
+				_SouthPole = value;
+			}
+		}
+
 		PlainstructWeatherStation _Verl;
 		public PlainstructWeatherStation Verl
 		{
@@ -469,6 +526,7 @@ namespace HansPlc
 		public void CopyPlainToCyclic(HansPlc.fbWorldWeatherWatch target)
 		{
 			NorthPole.CopyPlainToCyclic(target.NorthPole);
+			SouthPole.CopyPlainToCyclic(target.SouthPole);
 			Verl.CopyPlainToCyclic(target.Verl);
 			Kriva.CopyPlainToCyclic(target.Kriva);
 			target.PlcCommentOnCurrentWeather.Cyclic = PlcCommentOnCurrentWeather;
@@ -482,6 +540,7 @@ namespace HansPlc
 		public void CopyPlainToShadow(HansPlc.fbWorldWeatherWatch target)
 		{
 			NorthPole.CopyPlainToShadow(target.NorthPole);
+			SouthPole.CopyPlainToShadow(target.SouthPole);
 			Verl.CopyPlainToShadow(target.Verl);
 			Kriva.CopyPlainToShadow(target.Kriva);
 			target.PlcCommentOnCurrentWeather.Shadow = PlcCommentOnCurrentWeather;
@@ -495,6 +554,7 @@ namespace HansPlc
 		public void CopyCyclicToPlain(HansPlc.fbWorldWeatherWatch source)
 		{
 			NorthPole.CopyCyclicToPlain(source.NorthPole);
+			SouthPole.CopyCyclicToPlain(source.SouthPole);
 			Verl.CopyCyclicToPlain(source.Verl);
 			Kriva.CopyCyclicToPlain(source.Kriva);
 			PlcCommentOnCurrentWeather = source.PlcCommentOnCurrentWeather.LastValue;
@@ -508,6 +568,7 @@ namespace HansPlc
 		public void CopyShadowToPlain(HansPlc.fbWorldWeatherWatch source)
 		{
 			NorthPole.CopyShadowToPlain(source.NorthPole);
+			SouthPole.CopyShadowToPlain(source.SouthPole);
 			Verl.CopyShadowToPlain(source.Verl);
 			Kriva.CopyShadowToPlain(source.Kriva);
 			PlcCommentOnCurrentWeather = source.PlcCommentOnCurrentWeather.Shadow;
@@ -521,6 +582,7 @@ namespace HansPlc
 		public PlainfbWorldWeatherWatch()
 		{
 			_NorthPole = new PlainstructWeatherStation();
+			_SouthPole = new PlainstructWeatherStation();
 			_Verl = new PlainstructWeatherStation();
 			_Kriva = new PlainstructWeatherStation();
 		}

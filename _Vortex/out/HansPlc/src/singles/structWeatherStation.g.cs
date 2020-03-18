@@ -30,53 +30,28 @@ namespace HansPlc
 		}
 
 		protected string _humanReadable;
-		Vortex.Connector.ValueTypes.OnlinerString _CityName;
-		public Vortex.Connector.ValueTypes.OnlinerString CityName
+		Vortex.Connector.ValueTypes.OnlinerString _StationICAO;
+		public Vortex.Connector.ValueTypes.OnlinerString StationICAO
 		{
 			get
 			{
-				return _CityName;
+				return _StationICAO;
 			}
 		}
 
-		Vortex.Connector.ValueTypes.Online.IOnlineString IstructWeatherStation.CityName
+		Vortex.Connector.ValueTypes.Online.IOnlineString IstructWeatherStation.StationICAO
 		{
 			get
 			{
-				return CityName;
+				return StationICAO;
 			}
 		}
 
-		Vortex.Connector.ValueTypes.Shadows.IShadowString IShadowstructWeatherStation.CityName
+		Vortex.Connector.ValueTypes.Shadows.IShadowString IShadowstructWeatherStation.StationICAO
 		{
 			get
 			{
-				return CityName;
-			}
-		}
-
-		Vortex.Connector.ValueTypes.OnlinerString _CountryCode;
-		public Vortex.Connector.ValueTypes.OnlinerString CountryCode
-		{
-			get
-			{
-				return _CountryCode;
-			}
-		}
-
-		Vortex.Connector.ValueTypes.Online.IOnlineString IstructWeatherStation.CountryCode
-		{
-			get
-			{
-				return CountryCode;
-			}
-		}
-
-		Vortex.Connector.ValueTypes.Shadows.IShadowString IShadowstructWeatherStation.CountryCode
-		{
-			get
-			{
-				return CountryCode;
+				return StationICAO;
 			}
 		}
 
@@ -260,8 +235,7 @@ namespace HansPlc
 
 		public void LazyOnlineToShadow()
 		{
-			CityName.Shadow = CityName.LastValue;
-			CountryCode.Shadow = CountryCode.LastValue;
+			StationICAO.Shadow = StationICAO.LastValue;
 			StationStatus.Shadow = StationStatus.LastValue;
 			DewPoint.Shadow = DewPoint.LastValue;
 			Pressure.Shadow = Pressure.LastValue;
@@ -273,8 +247,7 @@ namespace HansPlc
 
 		public void LazyShadowToOnline()
 		{
-			CityName.Cyclic = CityName.Shadow;
-			CountryCode.Cyclic = CountryCode.Shadow;
+			StationICAO.Cyclic = StationICAO.Shadow;
 			StationStatus.Cyclic = StationStatus.Shadow;
 			DewPoint.Cyclic = DewPoint.Shadow;
 			Pressure.Cyclic = Pressure.Shadow;
@@ -422,10 +395,8 @@ namespace HansPlc
 			_humanReadable = Vortex.Connector.IConnector.CreateSymbol(parent.HumanReadable, readableTail);
 			PexPreConstructor(parent, readableTail, symbolTail);
 			Symbol = Vortex.Connector.IConnector.CreateSymbol(parent.Symbol, symbolTail);
-			_CityName = @Connector.Online.Adapter.CreateSTRING(this, "<#City#>", "CityName");
-			CityName.AttributeName = "<#City#>";
-			_CountryCode = @Connector.Online.Adapter.CreateSTRING(this, "<#Country code#>", "CountryCode");
-			CountryCode.AttributeName = "<#Country code#>";
+			_StationICAO = @Connector.Online.Adapter.CreateSTRING(this, "<#Station name (ICAO)#>", "StationICAO");
+			StationICAO.AttributeName = "<#Station name (ICAO)#>";
 			_StationStatus = @Connector.Online.Adapter.CreateINT(this, "<#Station status#>", "StationStatus");
 			StationStatus.AttributeName = "<#Station status#>";
 			_DewPoint = @Connector.Online.Adapter.CreateREAL(this, "<#Dew Point#>", "DewPoint");
@@ -454,10 +425,8 @@ namespace HansPlc
 		public structWeatherStation()
 		{
 			PexPreConstructorParameterless();
-			_CityName = Vortex.Connector.IConnectorFactory.CreateSTRING();
-			CityName.AttributeName = "<#City#>";
-			_CountryCode = Vortex.Connector.IConnectorFactory.CreateSTRING();
-			CountryCode.AttributeName = "<#Country code#>";
+			_StationICAO = Vortex.Connector.IConnectorFactory.CreateSTRING();
+			StationICAO.AttributeName = "<#Station name (ICAO)#>";
 			_StationStatus = Vortex.Connector.IConnectorFactory.CreateINT();
 			StationStatus.AttributeName = "<#Station status#>";
 			_DewPoint = Vortex.Connector.IConnectorFactory.CreateREAL();
@@ -499,12 +468,7 @@ namespace HansPlc
             /// <exclude />
 	public partial interface IstructWeatherStation : Vortex.Connector.IVortexOnlineObject
 	{
-		Vortex.Connector.ValueTypes.Online.IOnlineString CityName
-		{
-			get;
-		}
-
-		Vortex.Connector.ValueTypes.Online.IOnlineString CountryCode
+		Vortex.Connector.ValueTypes.Online.IOnlineString StationICAO
 		{
 			get;
 		}
@@ -563,12 +527,7 @@ namespace HansPlc
             /// <exclude />
 	public partial interface IShadowstructWeatherStation : Vortex.Connector.IVortexShadowObject
 	{
-		Vortex.Connector.ValueTypes.Shadows.IShadowString CityName
-		{
-			get;
-		}
-
-		Vortex.Connector.ValueTypes.Shadows.IShadowString CountryCode
+		Vortex.Connector.ValueTypes.Shadows.IShadowString StationICAO
 		{
 			get;
 		}
@@ -626,31 +585,17 @@ namespace HansPlc
             /// <exclude />
 	public partial class PlainstructWeatherStation : Vortex.Connector.IPlain
 	{
-		System.String _CityName;
-		public System.String CityName
+		System.String _StationICAO;
+		public System.String StationICAO
 		{
 			get
 			{
-				return _CityName;
+				return _StationICAO;
 			}
 
 			set
 			{
-				_CityName = value;
-			}
-		}
-
-		System.String _CountryCode;
-		public System.String CountryCode
-		{
-			get
-			{
-				return _CountryCode;
-			}
-
-			set
-			{
-				_CountryCode = value;
+				_StationICAO = value;
 			}
 		}
 
@@ -755,8 +700,7 @@ namespace HansPlc
 
 		public void CopyPlainToCyclic(HansPlc.structWeatherStation target)
 		{
-			target.CityName.Cyclic = CityName;
-			target.CountryCode.Cyclic = CountryCode;
+			target.StationICAO.Cyclic = StationICAO;
 			target.StationStatus.Cyclic = StationStatus;
 			target.DewPoint.Cyclic = DewPoint;
 			target.Pressure.Cyclic = Pressure;
@@ -773,8 +717,7 @@ namespace HansPlc
 
 		public void CopyPlainToShadow(HansPlc.structWeatherStation target)
 		{
-			target.CityName.Shadow = CityName;
-			target.CountryCode.Shadow = CountryCode;
+			target.StationICAO.Shadow = StationICAO;
 			target.StationStatus.Shadow = StationStatus;
 			target.DewPoint.Shadow = DewPoint;
 			target.Pressure.Shadow = Pressure;
@@ -791,8 +734,7 @@ namespace HansPlc
 
 		public void CopyCyclicToPlain(HansPlc.structWeatherStation source)
 		{
-			CityName = source.CityName.LastValue;
-			CountryCode = source.CountryCode.LastValue;
+			StationICAO = source.StationICAO.LastValue;
 			StationStatus = source.StationStatus.LastValue;
 			DewPoint = source.DewPoint.LastValue;
 			Pressure = source.Pressure.LastValue;
@@ -809,8 +751,7 @@ namespace HansPlc
 
 		public void CopyShadowToPlain(HansPlc.structWeatherStation source)
 		{
-			CityName = source.CityName.Shadow;
-			CountryCode = source.CountryCode.Shadow;
+			StationICAO = source.StationICAO.Shadow;
 			StationStatus = source.StationStatus.Shadow;
 			DewPoint = source.DewPoint.Shadow;
 			Pressure = source.Pressure.Shadow;

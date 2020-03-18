@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:properties="clr-namespace:Weather.Wpf.Properties"
     Width="800"
-    Height="450"
+    Height="560"
     mc:Ignorable="d"
     DataContext="{x:Static local:App.Hans}"
     Title="{x:Static properties:Resources.PlcsOpinionOnWeather}">
@@ -33,22 +33,70 @@
                             <GroupBox DataContext="{Binding StationStatus, Mode=OneWay}" Header="{Binding AttributeName}">
                                 <TextBlock Text="{Binding Cyclic}" />
                             </GroupBox>
-                            <GroupBox DataContext="{Binding DewPoint}" Header="{Binding AttributeName}">
+                            <GroupBox DataContext="{Binding DewPoint}" >
+                                <GroupBox.Header>
+                                    <TextBlock>
+                                        <Run Text="{Binding AttributeName}"/>
+                                        <Run Text=" ["/>
+                                        <Run Text="{Binding AttributeUnits}"/>
+                                        <Run Text="]"/>
+                                    </TextBlock>
+                                </GroupBox.Header>
                                 <TextBlock Text="{Binding Cyclic}" />
                             </GroupBox>
-                            <GroupBox DataContext="{Binding Temp}" Header="{Binding AttributeName}">
+                            <GroupBox DataContext="{Binding Temp}">
+                                <GroupBox.Header>
+                                    <TextBlock>
+                                        <Run Text="{Binding AttributeName}"/>
+                                        <Run Text=" ["/>
+                                        <Run Text="{Binding AttributeUnits}"/>
+                                        <Run Text="]"/>
+                                    </TextBlock>
+                                </GroupBox.Header>
                                 <TextBlock Text="{Binding Cyclic}" />
                             </GroupBox>
-                            <GroupBox DataContext="{Binding Pressure, Mode=OneWay}" Header="{Binding AttributeName}">
+                            <GroupBox DataContext="{Binding Pressure, Mode=OneWay}" >
+                                <GroupBox.Header>
+                                    <TextBlock>
+                                        <Run Text="{Binding AttributeName}"/>
+                                        <Run Text=" ["/>
+                                        <Run Text="{Binding AttributeUnits}"/>
+                                        <Run Text="]"/>
+                                    </TextBlock>
+                                </GroupBox.Header>
                                 <TextBlock Text="{Binding Cyclic}" />
                             </GroupBox>
-                            <GroupBox DataContext="{Binding Visibility, Mode=OneWay}" Header="{Binding AttributeName}">
+                            <GroupBox DataContext="{Binding Visibility, Mode=OneWay}" >
+                                <GroupBox.Header>
+                                    <TextBlock>
+                                        <Run Text="{Binding AttributeName}"/>
+                                        <Run Text=" ["/>
+                                        <Run Text="{Binding AttributeUnits}"/>
+                                        <Run Text="]"/>
+                                    </TextBlock>
+                                </GroupBox.Header>
                                 <TextBlock Text="{Binding Cyclic}" />
                             </GroupBox>
-                            <GroupBox DataContext="{Binding WindSpeed, Mode=OneWay}" Header="{Binding AttributeName}">
+                            <GroupBox DataContext="{Binding WindSpeed, Mode=OneWay}" >
+                                <GroupBox.Header>
+                                    <TextBlock>
+                                        <Run Text="{Binding AttributeName}"/>
+                                        <Run Text=" ["/>
+                                        <Run Text="{Binding AttributeUnits}"/>
+                                        <Run Text="]"/>
+                                    </TextBlock>
+                                </GroupBox.Header>
                                 <TextBlock Text="{Binding Cyclic}" />
                             </GroupBox>
-                            <GroupBox DataContext="{Binding WindHeading, Mode=OneWay}" Header="{Binding AttributeName}">
+                            <GroupBox DataContext="{Binding WindHeading, Mode=OneWay}">
+                                <GroupBox.Header>
+                                    <TextBlock>
+                                        <Run Text="{Binding AttributeName}"/>
+                                        <Run Text=" ["/>
+                                        <Run Text="{Binding AttributeUnits}"/>
+                                        <Run Text="]"/>
+                                    </TextBlock>
+                                </GroupBox.Header>
                                 <TextBlock Text="{Binding Cyclic}" />
                             </GroupBox>
                         </StackPanel>

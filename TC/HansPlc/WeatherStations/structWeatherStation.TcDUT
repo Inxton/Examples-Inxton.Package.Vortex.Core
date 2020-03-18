@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
   <DUT Name="structWeatherStation" Id="{262a73db-d55b-467b-88e5-ec729c52b493}">
     <Declaration><![CDATA[TYPE structWeatherStation :
 STRUCT
-	{attribute addProperty Name "<#Station name (ICAO)#>"}	
-	StationICAO : STRING(4);
+	{attribute addProperty Name "<#City#>"}	
+	CityName : STRING;
+	{attribute addProperty Name "<#Country code#>"}	
+	CountryCode : STRING;
 	{attribute addProperty Name "<#Station status#>"}
     StationStatus : enumStationStatus; 
 	{attribute addProperty Name "<#Dew Point#>"}	

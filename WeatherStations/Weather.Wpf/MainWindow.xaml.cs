@@ -1,18 +1,9 @@
 ﻿using HansPlc;
+using OpenWeatherMap.Standard;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Weather.Wpf
 {
@@ -24,6 +15,7 @@ namespace Weather.Wpf
         public MainWindow()
         {
             InitializeComponent();
+            Current currentWeather = new Current("b798849c1f92d2694d041bc44212b40e");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

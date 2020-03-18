@@ -129,15 +129,6 @@
   <data name="___North_pole_station_is_not_available___" xml:space="preserve">
     <value>North pole station is not available.</value>
   </data>
-  <data name="___It_is_fairly_warm_at_the_south_pole___" xml:space="preserve">
-    <value>It is fairly warm at the south pole.</value>
-  </data>
-  <data name="___It_is_as_cold_as_it_should_be_at_the_souht_pole___" xml:space="preserve">
-    <value>It is as cold as it should be at the souht pole.</value>
-  </data>
-  <data name="___South_pole_station_is_not_available___" xml:space="preserve">
-    <value>South pole station is not available.</value>
-  </data>
   <data name="___It_is_not_freezing_in_Verl___" xml:space="preserve">
     <value>It is not freezing in Verl.</value>
   </data>
@@ -159,9 +150,6 @@
   <data name="___North_pole_station__" xml:space="preserve">
     <value>North pole station</value>
   </data>
-  <data name="___South_pole_station__" xml:space="preserve">
-    <value>South pole station</value>
-  </data>
   <data name="___Verl__Germany__" xml:space="preserve">
     <value>Verl, Germany</value>
   </data>
@@ -171,8 +159,11 @@
   <data name="___What_plc_says__" xml:space="preserve">
     <value>What plc says</value>
   </data>
-  <data name="___Station_name__ICAO___" xml:space="preserve">
-    <value>Station name (ICAO)</value>
+  <data name="___City__" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="___Country_code__" xml:space="preserve">
+    <value>Country code</value>
   </data>
   <data name="___Station_status__" xml:space="preserve">
     <value>Station status</value>

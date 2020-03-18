@@ -1,16 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.0">
   <POU Name="fbWorldWeatherWatch" Id="{93bf999a-20b2-4c2f-97ca-b40c4de722c6}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK fbWorldWeatherWatch
 VAR
 	{attribute addProperty Name "<#North pole station#>"}
-	NorthPole : structWeatherStation := (StationICAO := 'BINP');
-	{attribute addProperty Name "<#South pole station#>"}
-	SouthPole : structWeatherStation := (StationICAO := 'NZSP');
+	NorthPole : structWeatherStation := (CityName := 'North Pole', CountryCode:='US');
 	{attribute addProperty Name "<#Verl, Germany#>"}
-	Verl : structWeatherStation := (StationICAO := 'EDLP');
+	Verl : structWeatherStation := (CityName := 'Verl', CountryCode:='Germany');
 	{attribute addProperty Name "<#Kriva, Slovakia#>"}
-	Kriva : structWeatherStation := (StationICAO := 'LZIB');
+	Kriva : structWeatherStation := (CityName := 'Krivá', CountryCode:='SK');
 	
 	{attribute addProperty Name "<#What plc says#>"}
 	PlcCommentOnCurrentWeather : STRING(255);
@@ -30,18 +28,6 @@ IF (NorthPole.StationStatus = enumStationStatus.Available) THEN
 ELSE;
 	Utils.FluentString.Append('<#North pole station is not available.#> ');
 END_IF; 
-
-
-IF (SouthPole.StationStatus = enumStationStatus.Available) THEN
-	IF(SouthPole.Temp > -50) THEN
-		Utils.FluentString.Append('<#It is fairly warm at the south pole.#> ');
-	ELSE
-		Utils.FluentString.Append('<#It is as cold as it should be at the souht pole.#> ');
-	END_IF; 
-ELSE;
-	Utils.FluentString.Append('<#South pole station is not available.#> ');
-END_IF; 
-
 
 IF (Verl.StationStatus = enumStationStatus.Available) THEN
 	IF(Verl.Temp > 0) THEN
@@ -80,12 +66,6 @@ PlcCommentOnCurrentWeather := Utils.FluentString.Result;
       <LineId Id="58" Count="0" />
       <LineId Id="61" Count="0" />
       <LineId Id="60" Count="0" />
-      <LineId Id="33" Count="0" />
-      <LineId Id="59" Count="0" />
-      <LineId Id="34" Count="5" />
-      <LineId Id="65" Count="1" />
-      <LineId Id="64" Count="0" />
-      <LineId Id="72" Count="0" />
       <LineId Id="62" Count="0" />
       <LineId Id="32" Count="0" />
       <LineId Id="41" Count="4" />

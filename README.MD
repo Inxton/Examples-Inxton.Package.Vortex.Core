@@ -46,48 +46,30 @@ Follow instructions from [Beckhoff - Activating a TwinCAT 3 project
 You will need to set up *AMS ID* and *port* (if changed for some reason). Open file ```../HansPlcConnector/Entry.cs```
 
 ~~~ C#
-#define REMOTE // Comment if your target is localhost
+#define LOCAL // Comment if your target is remote
 
-using HansPlc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Vortex.Adapters.Connector.Tc3.Adapter;
 
 namespace HansPlc
 {
     public static class Entry
     {
-#if REMOTE
-        /// <summary>
-        /// Target system ams id.
-        /// </summary>
-        const string AmsId = "172.20.10.102.1.1"; // your ams id or set to 'null' if local
-
-        /// <summary>
-        /// Port of the target system.
-        /// </summary>
+#if LOCAL
+        const string AmsId = null; // your ams id or set to 'null' if local
         const int Port = 851;
 #else
-        /// <summary>
-        /// Target system ams id. (local)
-        /// </summary>
-        const string AmsId = null
-
-        /// <summary>
-        /// Port of the target system.
-        /// </summary>
+        const string AmsId = "172.20.10.102.1.1"; // set your target ams id
         const int Port = 851;
-
 #endif
-
         public static HansPlcTwinController HansPlc { get; } = new HansPlcTwinController(Tc3ConnectorAdapter.Create(AmsId, Port));
-
     }
 }
 ~~~
+## License file
+License file is stored in  `SystemDisk:\Inxton\Licence.xml`.
+In most cases it's `C:\Inxton\Licence.xml`
+
+Get your license file from [Inxton](inxton.com) or use this [temporary licence](http://bit.ly/future_of_automation).
 
 ## Select the project you want to try
 

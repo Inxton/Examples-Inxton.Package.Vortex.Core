@@ -79,8 +79,8 @@
     <Reference Include="TwinCAT.Ads, Version=4.4.0.0, Culture=neutral, PublicKeyToken=180016cd49e5e8c3, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Beckhoff.TwinCAT.Ads.4.4.0\lib\Net40-full\TwinCAT.Ads.dll</HintPath>
     </Reference>
-    <Reference Include="UnitsNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f8601875a1f041da, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\UnitsNet.4.52.0\lib\net40\UnitsNet.dll</HintPath>
+    <Reference Include="UnitsNet, Version=3.36.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\UnitsNet.3.36.0\lib\net35\UnitsNet.dll</HintPath>
     </Reference>
     <Reference Include="Vortex.Adapters.Connector.Tc3, Version=0.112.0.0, Culture=neutral, PublicKeyToken=dfa781ee5783a74c, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Inxton.Vortex.Adapters.Connector.Tc3.0.112.0-preview.7\lib\netstandard2.0\Vortex.Adapters.Connector.Tc3.dll</HintPath>

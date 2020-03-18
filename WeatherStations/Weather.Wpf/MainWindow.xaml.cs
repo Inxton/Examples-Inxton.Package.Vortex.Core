@@ -52,8 +52,7 @@ namespace Weather.Wpf
         {
             try
             {
-                // Reads Weather Data from the internet.
-
+                // Reads Weather Data from the internet.              
                 var icao = OpenWeather.MetarStationLookup.Instance.Lookup(station.StationICAO.Synchron);
 
                 station.StationStatus.Cyclic = (short)enumStationStatus.Available;
@@ -81,12 +80,12 @@ namespace Weather.Wpf
         private void SimulateValues(structWeatherStation station, float x)
         {
             station.StationStatus.Cyclic = (short)enumStationStatus.Unknown;
-            station.DewPoint.Cyclic = 30.0f * x;
-            station.Temp.Cyclic = -50.0f * x;
-            station.Pressure.Cyclic = 800.0f * x;
-            station.WindSpeed.Cyclic = 50.0f * x;
-            station.WindHeading.Cyclic = (ushort)(360f * x);
-            station.Visibility.Cyclic = 15.0f * x;
+            station.DewPoint.Cyclic = 0;
+            station.Temp.Cyclic = 0;
+            station.Pressure.Cyclic = 0;
+            station.WindSpeed.Cyclic = 0;
+            station.WindHeading.Cyclic = 0;
+            station.Visibility.Cyclic = 0;
         }
 
         private IEnumerable<object> GetWeatherStations()

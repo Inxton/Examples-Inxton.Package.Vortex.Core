@@ -4,7 +4,7 @@
     <Declaration><![CDATA[FUNCTION_BLOCK fbWorldWeatherWatch
 VAR
 	{attribute addProperty Name "<#North pole station#>"}
-	NorthPole : structWeatherStation := (StationICAO := 'BINP');
+	NorthPole : structWeatherStation := (StationICAO := 'CYRB');
 	{attribute addProperty Name "<#South pole station#>"}
 	SouthPole : structWeatherStation := (StationICAO := 'NZSP');
 	{attribute addProperty Name "<#Verl, Germany#>"}

@@ -120,3 +120,11 @@
 2020-02-28 13:53:55.227 +01:00 [INF] Building project 'HansPlc.HansPlc'
 2020-02-28 13:53:55.228 +01:00 [INF] Installing project libraries into project 'HansPlc'
 2020-02-28 13:53:55.504 +01:00 [INF] Updating project HansPlc.HansPlc
+2020-03-18 13:34:34.436 +01:00 [INF] Opening solution: C:\MTS\Develop\foxtroth\github\examples\Inxton.Package.Vortex.Core.Examples\Inxton.Vortex.Core.Examples.sln
+2020-03-18 13:34:34.832 +01:00 [INF] Building project 'HansPlc.HansPlc'
+2020-03-18 13:34:34.833 +01:00 [INF] Installing project libraries into project 'HansPlc'
+2020-03-18 13:34:35.134 +01:00 [INF] Updating project HansPlc.HansPlc
+2020-03-18 13:39:10.856 +01:00 [INF] Opening solution: C:\MTS\Develop\foxtroth\github\examples\Inxton.Package.Vortex.Core.Examples\Inxton.Vortex.Core.Examples.sln
+2020-03-18 13:39:11.200 +01:00 [INF] Building project 'HansPlc.HansPlc'
+2020-03-18 13:39:11.201 +01:00 [INF] Installing project libraries into project 'HansPlc'
+2020-03-18 13:39:11.496 +01:00 [INF] Updating project HansPlc.HansPlc

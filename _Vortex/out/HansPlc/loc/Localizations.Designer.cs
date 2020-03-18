@@ -88,20 +88,11 @@ namespace HansPlcConnector.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It is fairly warm at the north pole..
+        ///   Looks up a localized string similar to It is fairly warm at the south..
         /// </summary>
-        internal static string ___It_is_fairly_warm_at_the_north_pole___ {
+        internal static string ___It_is_fairly_warm_at_the_south___ {
             get {
-                return ResourceManager.GetString("___It_is_fairly_warm_at_the_north_pole___", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to It is fairly warm at the south pole..
-        /// </summary>
-        internal static string ___It_is_fairly_warm_at_the_south_pole___ {
-            get {
-                return ResourceManager.GetString("___It_is_fairly_warm_at_the_south_pole___", resourceCulture);
+                return ResourceManager.GetString("___It_is_fairly_warm_at_the_south___", resourceCulture);
             }
         }
         
@@ -160,20 +151,20 @@ namespace HansPlcConnector.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to North pole station.
-        /// </summary>
-        internal static string ___North_pole_station__ {
-            get {
-                return ResourceManager.GetString("___North_pole_station__", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to North pole station is not available..
         /// </summary>
         internal static string ___North_pole_station_is_not_available___ {
             get {
                 return ResourceManager.GetString("___North_pole_station_is_not_available___", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to North station.
+        /// </summary>
+        internal static string ___North_station__ {
+            get {
+                return ResourceManager.GetString("___North_station__", resourceCulture);
             }
         }
         
@@ -196,20 +187,20 @@ namespace HansPlcConnector.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to South pole station.
-        /// </summary>
-        internal static string ___South_pole_station__ {
-            get {
-                return ResourceManager.GetString("___South_pole_station__", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to South pole station is not available..
         /// </summary>
         internal static string ___South_pole_station_is_not_available___ {
             get {
                 return ResourceManager.GetString("___South_pole_station_is_not_available___", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to South station.
+        /// </summary>
+        internal static string ___South_station__ {
+            get {
+                return ResourceManager.GetString("___South_station__", resourceCulture);
             }
         }
         

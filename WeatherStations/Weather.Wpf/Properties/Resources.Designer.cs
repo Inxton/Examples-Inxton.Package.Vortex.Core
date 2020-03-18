@@ -61,7 +61,7 @@ namespace Weather.Wpf.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Plcs&apos; opinion on Weather.
+        ///   Looks up a localized string similar to What PLC thinks about the weather.
         /// </summary>
         public static string PlcsOpinionOnWeather {
             get {

@@ -237,7 +237,6 @@ Global
 		{BD253568-608C-45A6-9DF7-1B778D955668}.Release|TwinCAT RT (x64).Build.0 = Release|Any CPU
 		{BD253568-608C-45A6-9DF7-1B778D955668}.Release|TwinCAT RT (x86).ActiveCfg = Release|Any CPU
 		{BD253568-608C-45A6-9DF7-1B778D955668}.Release|TwinCAT RT (x86).Build.0 = Release|Any CPU
-
 		{C96B3945-1A93-4A16-820E-AC8873C2089F}.Debug|Any CPU.ActiveCfg = Debug|TwinCAT RT (x64)
 		{C96B3945-1A93-4A16-820E-AC8873C2089F}.Debug|Any CPU.Build.0 = Debug|TwinCAT RT (x64)
 		{C96B3945-1A93-4A16-820E-AC8873C2089F}.Debug|TwinCAT CE7 (ARMV7).ActiveCfg = Debug|TwinCAT CE7 (ARMV7)
@@ -273,6 +272,7 @@ Global
 		{BD253568-608C-45A6-9DF7-1B778D955668} = {7B55F92A-9105-4226-A014-C9265C7CE6BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		RESX_PrefixTranslations = False
 		SolutionGuid = {86F1AB36-9A8F-42AD-8F42-D078EDF6998B}
 	EndGlobalSection
 EndGlobal

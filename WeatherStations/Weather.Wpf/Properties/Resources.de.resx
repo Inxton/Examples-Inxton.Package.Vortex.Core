@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ThisIsTheCommentAboutWeatherMadeByThePLC" xml:space="preserve">
-    <value>Dies ist der Kommentar zum Wetter der SPS :)!</value>
+    <value>Dies ist der Kommentar zum Wetter der SPS :)</value>
   </data>
   <data name="PlcsOpinionOnWeather" xml:space="preserve">
-    <value>Plcs &amp;#39;Meinung zum Wetter!</value>
+    <value>Was SPS über das Wetter denkt</value>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Aktualisieren:</value>
+    <value>Aktualisieren</value>
   </data>
 </root>

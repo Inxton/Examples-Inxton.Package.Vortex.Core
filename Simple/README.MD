@@ -1,4 +1,4 @@
-![Inxton logo](..\assets\logo.png)
+![Inxton logo](../assets/logo.png)
 
 # Simple
 
@@ -10,9 +10,9 @@
 
 Inxton is reading the variable from PLC and displaying it
 ## Wpf
-![Inxton logo](..\assets\SimpleCounter.gif)
+![Inxton logo](../assets/SimpleCounter.gif)
 ## WinForm
-![Inxton logo](..\assets\SimpleWinForm.gif)
+![Inxton logo](../assets/SimpleWinForm.gif)
 # Need help?
 
 🧪 Or create an issue [here](https://github.com/Inxton/Feedback/issues/new/choose)

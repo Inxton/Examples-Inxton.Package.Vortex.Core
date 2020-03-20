@@ -1,4 +1,4 @@
-![Inxton logo](..\assets\logo.png)
+![Inxton logo](../assets/logo.png)
 
 #  AddedProperties
 
@@ -10,9 +10,9 @@ This example is trying to expose the feature that allows you to introduce additi
 
 Inxton is reading the variable from PLC and displaying it
 ## Simple example
-![Inxton logo](..\assets\addedPropertyUse1.png)
+![Inxton logo](../assets/addedPropertyUse1.png)
 ## Nested example
-![Inxton logo](..\assets\addedPropertyUse2.png)
+![Inxton logo](../assets/addedPropertyUse2.png)
 
 
 # Need help?

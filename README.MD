@@ -2,7 +2,7 @@
 
 # About this project
 
-Inxton.Vortex.Core is a basic, but powerful set tools to interact with Beckhoff TwinCAT3 PLC data from C# in real-time.
+Inxton.Vortex.Core is a basic, but powerful set of tools that allow you to interact with Beckhoff TwinCAT3 PLC data from .NET (e.g. C#, VB, etc) in a fast and scalable way.
 
 Inxton compiles a PLC project and generates one to one C# representation of a PLC object.
 
@@ -10,11 +10,11 @@ Inxton compiles a PLC project and generates one to one C# representation of a PL
 
 ## Compiler
 
-Inxton.Vortex.Compiler is the founding block of the Inxton.Vortex.Framework. It provides one to one C# objects from TwinCAT3 PLC program so you can use any .NET based platform to access PLC data.
+Inxton.Vortex.Compiler is the founding block of the Inxton.Vortex.Framework. It provides one to one C# objects from the TwinCAT3 PLC program so you can use any .NET based platform to access PLC data.
 
 TwinCAT 3 project that contains `HansPlc` program will be translated into a .NET project called `HansPlcConnector`. This is the bridge between TwinCAT 3 PLC and .NET. 
 
-`HansPlcConnector` contains `TwinObjects` - .NET representation of a complex PLC data type (STRUCT, UNION, FB, GVL, PRG). Each of these data structures is represented by a standalone C# class with the same name and attributes as its PLC counterpart.
+`HansPlcConnector` contains `TwinObjects` - .NET representation of a complex PLC data type (STRUCT, UNION, FB, GVL, PRG). Each of these data structures is represented by a standalone C# class with the same name and attributes as its PLC counterpart. The root class that represents the HansPlc is 'HansPlcTwinController'.
 
 ![inxton_transpile.gif](./assets/inxton_transpile.gif)
 

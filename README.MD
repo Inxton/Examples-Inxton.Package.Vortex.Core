@@ -14,7 +14,7 @@ Inxton.Vortex.Compiler is the founding block of the Inxton.Vortex.Framework. It 
 
 TwinCAT 3 project that contains `HansPlc` program will be translated into a .NET project called `HansPlcConnector`. This is the bridge between TwinCAT 3 PLC and .NET. 
 
-`HansPlcConnector` contains `TwinObjects` - .NET representation of a complex PLC data type (STRUCT, UNION, FB, GVL, PRG). Each of these data structures is represented by a standalone C# class with the same name and attributes as its PLC counterpart. The root class that represents the HansPlc is 'HansPlcTwinController'.
+`HansPlcConnector` contains `TwinObjects` - .NET representation of a complex PLC data type (STRUCT, UNION, FB, GVL, PRG). Each of these data structures is represented by a standalone C# class with the same name and attributes as its PLC counterpart. The root class that represents the `HansPlc` is `HansPlcTwinController`.
 
 ![inxton_transpile.gif](./assets/inxton_transpile.gif)
 
@@ -74,7 +74,7 @@ Update-Package -Reinstall
 Activate your configuration, download the PLC to your target system and run it as any other TwinCAT 3 project. You will need to set the target system to the target you have available (e.g. local)
 
 Follow instructions from [Beckhoff - Activating a TwinCAT 3 project
-](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_c/81064793403374091-1.html&id=)
+](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/36028799544005771.html&id=)
 
 ## Connect your app with PLC
 
@@ -232,14 +232,14 @@ Just submit it [here](https://github.com/Inxton/Feedback/issues/new/choose)
 
 # License
 tldr
-> Developers are encouraged to use this project -  free of charge, although when you want to use it in a production environment you need to go to  [INXTON.com](https://www.inxton.com/) and purchase a licence.
+> You can to use Inxton.Vortex.Framework free of charge, although when you want to use it in a production environment you need to go to  [INXTON.com](https://www.inxton.com/) and purchase a licence.
 
 to make our lawyers happy - read the whole licence agreement [here](https://github.com/Inxton/about/blob/master/license.md)
 
 
 ## What to do next?
 
-Checkout documentation  [Inxton.Package.Vortex.Core](https://github.com/Inxton/documentation)
+Checkout documentation  [Inxton.Package.Vortex.Core](https://github.com/Inxton/)
 
 Install the extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Inxton.InxtonVortexBuilderExtensionPre)
 

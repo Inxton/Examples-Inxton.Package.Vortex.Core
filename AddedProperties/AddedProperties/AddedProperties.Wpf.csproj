@@ -39,7 +39,7 @@
       <HintPath>..\..\packages\Inxton.Vortex.Connector.0.112.0-preview.7\lib\netstandard2.0\Inxton.Licencing.dll</HintPath>
     </Reference>
     <Reference Include="Inxton.Package.Vortex.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Inxton.Package.Vortex.Core.0.113.3-preview.1\lib\netstandard2.0\Inxton.Package.Vortex.Core.dll</HintPath>
+      <HintPath>..\..\packages\Inxton.Package.Vortex.Core.0.116.5-preview.2\lib\netstandard2.0\Inxton.Package.Vortex.Core.dll</HintPath>
     </Reference>
     <Reference Include="Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Serilog.2.9.0\lib\net46\Serilog.dll</HintPath>

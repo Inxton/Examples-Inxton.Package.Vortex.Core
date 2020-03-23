@@ -76,6 +76,17 @@ Activate your configuration, download the PLC to your target system and run it a
 Follow instructions from [Beckhoff - Activating a TwinCAT 3 project
 ](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/36028799544005771.html&id=)
 
+## Copy the license file
+To run your Inxton application you need to have a valid licence. The preview licence file is provided completely free of charge. 
+It's simple, just grab it by following these steps. 
+
+Easy installation steps:
+1. Dowload **Licence.xml** file from github environment [here](http://bit.ly/future_of_automation) or as raw format [here](https://bit.ly/2w8nFbT).
+2. Don't forget to save licence as **.xml** file.
+3. Copy/Move licence into `C:\Inxton\Licence.xml` folder.
+
+> **Note:** *Preview licence is valid until 2020-SEPT-01. Don't worry, you should be fine, the full release is coming out in July 2020.*
+
 ## Connect your app with PLC
 
 Let's have a simple PLC project - a simple counter.

@@ -1,6 +1,6 @@
 ![Inxton logo](./assets/logo.png)
 
-Nowadays Programmable Logic Controllers (PLC) are required to do more than ever before. Access database, make HTTP requests, build JSONs - stuff they were never meant to do. Even though it's possible, the PLC code is repetitive and hard to navigate, forcing the programmers to spend too much time fixing errors instead of focusing on improvements.
+Nowadays Programmable Logic Controllers (PLC) are required to do more than ever before:  Access database, make HTTP requests, build JSONs - stuff they were never meant to do. Even though it's possible, the PLC code is repetitive and hard to navigate, forcing the programmers to spend too much time fixing errors instead of focusing on improvements.
  
 Thanks to Inxton.Vortex.Framework, you can use a high-level programming language like C# to make your solution more efficient and easier to operate. Use the PLC for what it was designed to do and leave all the advanced problems to a modern environment like .NET.
 

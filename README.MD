@@ -257,7 +257,7 @@ to make our lawyers happy - read the whole license agreement [here](https://gith
 
 ## What to do next?
 
-Checkout documentation  [Inxton.Package.Vortex.Core](https://github.com/Inxton/)
+Checkout documentation  [Inxton.Package.Vortex.Core](https://github.com/Inxton/Inxton.Package.Vortex.Core)
 
 Install the extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Inxton.InxtonVortexBuilderExtensionPre)
 

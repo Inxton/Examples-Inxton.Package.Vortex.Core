@@ -1,5 +1,9 @@
 ![Inxton logo](./assets/logo.png)
 
+Nowadays Programmable Logic Controllers (PLC) are required to do more than ever before. Access database, make HTTP requests, build JSONs - stuff it was never meant to do. Even though it's possible, the PLC code is repetitive and hard to navigate, forcing the programmers to spend too much time fixing errors instead of focusing on improvements.
+ 
+Thanks to Inxton.Vortex.Framework, you can use a high-level programming language like C# to make your solution more efficient and easier to operate. Use the PLC for what it was designed to do and leave all the advanced problems to a modern environment like .NET.
+
 # About this example projects
 
 These examples aim to present the use and capabilities of *Inxton.Package.Vortex.Core* that is a basic, but powerful set of tools that allow you to interact with Beckhoff TwinCAT3 PLC data from .NET (e.g. C#, VB, etc) in a fast and scalable way. This package is part of *Inxton.Vortex.Framework*.

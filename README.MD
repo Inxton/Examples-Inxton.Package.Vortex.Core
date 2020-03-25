@@ -46,7 +46,7 @@ Learn more about `TwinPrimitives` [here](https://github.com/Inxton/Inxton.Packag
 
 ## Check the prerequisites
 
-Make sure you have everything you need to start using examples in this repository [here](https://github.com/Inxton/documentation/blob/master/PREREQUISITES.MD).
+Make sure you have everything you need to start using examples in this repository [here](https://github.com/Inxton/Inxton.Package.Vortex.Core/blob/master/PREREQUISITES.MD).
 
 ## Clone this repository
 

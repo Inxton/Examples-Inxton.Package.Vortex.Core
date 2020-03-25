@@ -20,7 +20,7 @@ TwinCAT 3 project that contains ```HansPlc``` program that will be translated in
 
 ![inxton_transpile.gif](./assets/inxton_transpile.gif)
 
-Learn more about the compiler [here](https://github.com/Inxton/documentation/blob/master/Inxton.vortex.compiler.console/README.md).
+Learn more about the compiler [here](https://github.com/Inxton/Inxton.Package.Vortex.Core/blob/master/Inxton.vortex.compiler.console/README.md).
 
 Learn more about the `TwinObject` [here](https://github.com/Inxton/Inxton.Package.Vortex.Core/blob/master/Inxton.vortex.compiler.console/Conceptual/TwinObjects.md)
 

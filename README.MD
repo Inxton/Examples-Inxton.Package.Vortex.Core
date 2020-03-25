@@ -91,7 +91,7 @@ The installation is simple, just follow these steps:
 
 > **Note:** *Preview license is valid until 2020-SEPT-01. Don't worry, you will be fine, the full release is coming out in July 2020.*
 
-## Connect your app with PLC
+## Connect your app to your PLC
 
 Let's start a simple PLC project - a counter.
 ~~~PASCAL

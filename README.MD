@@ -160,7 +160,7 @@ if(currentCount > 133)
 
 ## Examples
 
-### [Simple](Simple/README.MD)
+### [Simple](Simple/README.md)
 
 *Simple* examples have a rudimentary plc counter. We aimed to show basic manipulation with twins of the PLC. Accessing variables, reading, writing, displaying (WPF, and WinForms).
 
@@ -174,7 +174,7 @@ if(currentCount > 133)
 
 ![Inxton logo](./assets/SimpleCounter.gif)
 
-### [AddedProperties](./AddedProperties/README.MD)
+### [AddedProperties](./AddedProperties/README.md)
 
 This example is trying to expose the feature that allows you to introduce additional properties to twin objects in the PLC code
 
@@ -219,7 +219,7 @@ var driveSpeedUnits = program.fbDriveX.Speed.AttributeUnits; // mm/s
 Console.WriteLine($"{driveName} is at position {drivePosition} {drivePositionUnits} and  moving at speed {driveSpeed} {driveSpeedUnits}"); 
 ~~~
 ![Inxton logo](./assets/addedPropertyUse1.png)
-### [Weather stations](./WeatherStations/README.MD)
+### [Weather stations](./WeatherStations/README.md)
 
 In this example, we are showing the ease with which you can use the power of .net ecosystem with the PLC. We are reading the data from some weather stations from around the world (via .net library) and we pass the data to the PLC. Plc then makes its own statements about the weather situation in different parts of the world.
 

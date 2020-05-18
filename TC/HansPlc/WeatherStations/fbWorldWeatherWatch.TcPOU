@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="fbWorldWeatherWatch" Id="{93bf999a-20b2-4c2f-97ca-b40c4de722c6}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK fbWorldWeatherWatch
+VAR
+	{attribute addProperty Name "<#North pole station#>"}
+	NorthPole : structWeatherStation := (StationICAO := 'CYRB');
+	{attribute addProperty Name "<#South pole station#>"}
+	SouthPole : structWeatherStation := (StationICAO := 'NZSP');
+	{attribute addProperty Name "<#Verl, Germany#>"}
+	Verl : structWeatherStation := (StationICAO := 'EDLP');
+	{attribute addProperty Name "<#Kriva, Slovakia#>"}
+	Kriva : structWeatherStation := (StationICAO := 'LZIB');
+	
+	{attribute addProperty Name "<#What plc says#>"}
+	PlcCommentOnCurrentWeather : STRING(255);
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[(* PLC IS COMMENTING ON WEATHER, GETTING INFORMATION FROM WEATHER STATIONS FROM ARROUND THE WORLD *)
+
+Utils.FluentString.Append('<#So, the weather situation is following#>: $N');
+
+IF (NorthPole.StationStatus = enumStationStatus.Available) THEN
+	IF(NorthPole.Temp > -50) THEN
+		Utils.FluentString.Append('<#It is fairly warm at the north pole.#>$N');
+	ELSE
+		Utils.FluentString.Append('<#It is as cold as it should be at the nort pole.#>$N');
+	END_IF;
+ELSE;
+	Utils.FluentString.Append('<#North pole station is not available.#>$N');
+END_IF; 
+
+
+IF (SouthPole.StationStatus = enumStationStatus.Available) THEN
+	IF(SouthPole.Temp > -50) THEN
+		Utils.FluentString.Append('<#It is fairly warm at the south pole.#>$N');
+	ELSE
+		Utils.FluentString.Append('<#It is as cold as it should be at the souht pole.#>$N');
+	END_IF; 
+ELSE;
+	Utils.FluentString.Append('<#South pole station is not available.#>$N');
+END_IF; 
+
+
+IF (Verl.StationStatus = enumStationStatus.Available) THEN
+	IF(Verl.Temp > 0) THEN
+		Utils.FluentString.Append('<#It is not freezing in Verl.#>$N');
+	ELSE
+		Utils.FluentString.Append('<#It is freezing in Verl.#>$N');
+	END_IF; 
+ELSE;
+	Utils.FluentString.Append('<#Verl station is not available.#>$N');
+END_IF; 
+
+
+IF (Kriva.StationStatus = enumStationStatus.Available) THEN
+	IF(Kriva.Temp > 0) THEN
+		Utils.FluentString.Append('<#It is not freezing in Kriva.#>$N');
+	ELSE
+		Utils.FluentString.Append('<#It is freezing in Kriva.#>$N');
+	END_IF; 
+ELSE;
+	Utils.FluentString.Append('<#Kriva station is not available.#>$N');
+END_IF; 
+
+PlcCommentOnCurrentWeather := Utils.FluentString.Result;
+
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="fbWorldWeatherWatch">
+      <LineId Id="74" Count="1" />
+      <LineId Id="27" Count="0" />
+      <LineId Id="57" Count="0" />
+      <LineId Id="40" Count="0" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="28" Count="2" />
+      <LineId Id="23" Count="0" />
+      <LineId Id="58" Count="0" />
+      <LineId Id="61" Count="0" />
+      <LineId Id="60" Count="0" />
+      <LineId Id="33" Count="0" />
+      <LineId Id="59" Count="0" />
+      <LineId Id="34" Count="5" />
+      <LineId Id="65" Count="1" />
+      <LineId Id="64" Count="0" />
+      <LineId Id="72" Count="0" />
+      <LineId Id="62" Count="0" />
+      <LineId Id="32" Count="0" />
+      <LineId Id="41" Count="4" />
+      <LineId Id="67" Count="1" />
+      <LineId Id="63" Count="0" />
+      <LineId Id="73" Count="0" />
+      <LineId Id="69" Count="0" />
+      <LineId Id="47" Count="4" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="70" Count="1" />
+      <LineId Id="53" Count="0" />
+      <LineId Id="52" Count="0" />
+      <LineId Id="31" Count="0" />
+      <LineId Id="54" Count="0" />
+      <LineId Id="56" Count="0" />
+      <LineId Id="55" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Weather.Essentials.Wpf</RootNamespace>
+    <AssemblyName>Weather.Essentials.Wpf</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Inxton.Licencing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3bf43df27f52305d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Inxton.Vortex.Connector.0.110.0\lib\netstandard2.0\Inxton.Licencing.dll</HintPath>
+    </Reference>
+    <Reference Include="Inxton.Package.Vortex.Essentials.Wpf, Version=0.10.50.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Inxton.Package.Vortex.Essentials.Wpf.0.110.0\lib\net48\Inxton.Package.Vortex.Essentials.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.2.2.920, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Inxton.Vortex.Presentation.Controls.Wpf.0.113.0\lib\net48\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=3.0.1.920, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Inxton.Vortex.Presentation.Controls.Wpf.0.113.0\lib\net48\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Serilog.2.8.0\lib\net46\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.Console, Version=3.1.1.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Serilog.Sinks.Console.3.1.1\lib\net45\Serilog.Sinks.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Serilog.Sinks.File.4.0.0\lib\net45\Serilog.Sinks.File.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TwinCAT.Ads, Version=4.3.0.0, Culture=neutral, PublicKeyToken=180016cd49e5e8c3, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Beckhoff.TwinCAT.Ads.4.3.7\lib\Net40-full\TwinCAT.Ads.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortex.Adapters.Connector.Tc3, Version=0.110.0.0, Culture=neutral, PublicKeyToken=dfa781ee5783a74c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Inxton.Vortex.Adapters.Connector.Tc3.0.110.0\lib\netstandard2.0\Vortex.Adapters.Connector.Tc3.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortex.Connector, Version=0.110.0.0, Culture=neutral, PublicKeyToken=9f2602fd14098343, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Inxton.Vortex.Connector.0.110.0\lib\netstandard2.0\Vortex.Connector.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortex.Framework.Abstractions, Version=0.103.0.0, Culture=neutral, PublicKeyToken=9f2602fd14098343, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Inxton.Vortex.Framework.Abstractions.0.103.0-alpha.9\lib\netstandard2.0\Vortex.Framework.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortex.Presentation.Controls.Wpf, Version=0.113.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Inxton.Vortex.Presentation.Controls.Wpf.0.113.0\lib\net48\Vortex.Presentation.Controls.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortex.Presentation.Styling.Wpf, Version=0.113.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Inxton.Vortex.Presentation.Styling.Wpf.0.113.0\lib\net48\Vortex.Presentation.Styling.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Vortex.Presentation.Wpf, Version=0.113.0.0, Culture=neutral, PublicKeyToken=9f2602fd14098343, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Inxton.Vortex.Presentation.Wpf.0.113.0\lib\net48\Vortex.Presentation.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\HansPlcConnector\HansPlcConnector.csproj">
+      <Project>{9AE6BC87-464C-4B4A-AD99-596B9F167676}</Project>
+      <Name>HansPlcConnector</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

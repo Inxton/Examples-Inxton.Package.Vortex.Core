@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="fbFluentString" Id="{8476f40e-c0b0-41f8-be7d-ef76ddbbb55b}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK fbFluentString
+VAR
+	_resultString : STRING(255);
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <CFC>
+        <XmlArchive>
+          <Data>
+            <o xml:space="preserve" t="CFCImplementationObject">
+              <o n="Items" t="CFCItemList">
+                <l2 n="InnerList" />
+              </o>
+              <n n="ParameterInitializationMethodGenerator" />
+              <o n="RoutingPathTable" t="CFCRoutingPathTable">
+                <d2 n="InnerDictionary" />
+              </o>
+              <v n="AutoSizeCanvas">true</v>
+              <v n="CanvasWidth">0</v>
+              <v n="CanvasHeight">0</v>
+            </o>
+          </Data>
+          <TypeList>
+            <Type n="Boolean">System.Boolean</Type>
+            <Type n="CFCImplementationObject">{32d3375e-c010-41e2-9e43-b2fbf4f2b374}</Type>
+            <Type n="CFCItemList">{cd57ba20-558b-4b98-96c1-73c6000c3087}</Type>
+            <Type n="CFCRoutingPathTable">{4b8bcc79-5980-4868-b49e-005a8148859b}</Type>
+            <Type n="Int32">System.Int32</Type>
+          </TypeList>
+        </XmlArchive>
+      </CFC>
+    </Implementation>
+    <Method Name="Append" Id="{9d22aabf-8fd1-44ed-abaa-ad13dea6b117}">
+      <Declaration><![CDATA[METHOD Append : REFERENCE TO fbFluentString
+VAR_INPUT
+	In : STRING(255);
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[_resultString := CONCAT(_resultString, In);
+Append REF= THIS^;]]></ST>
+      </Implementation>
+    </Method>
+    <Property Name="Result" Id="{dc40d10e-1859-4a54-8a27-9aeb12aba65d}">
+      <Declaration><![CDATA[PROPERTY Result : STRING(255)]]></Declaration>
+      <Get Name="Get" Id="{cc4065a5-546d-47eb-8dd1-610c0cb72af3}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[Result := _resultString;
+_resultString := '';]]></ST>
+        </Implementation>
+      </Get>
+      <Set Name="Set" Id="{16a8541c-69aa-41e4-8241-9b177b343926}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[]]></ST>
+        </Implementation>
+      </Set>
+    </Property>
+    <LineIds Name="fbFluentString.Append">
+      <LineId Id="5" Count="0" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
+    <LineIds Name="fbFluentString.Result.Get">
+      <LineId Id="2" Count="0" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+    <LineIds Name="fbFluentString.Result.Set">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

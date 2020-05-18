@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="fbDrive" Id="{3dc76d49-1038-4ada-b247-e6bb10b2c1e9}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK fbDrive
+VAR
+	{attribute addProperty Name "Position"}
+    {attribute addProperty Units "nm"}	
+	Position : LREAL;
+	{attribute addProperty Name "Speed"}
+	{attribute addProperty Units "mm/s"}
+	Speed : LREAL;
+	{attribute addProperty Name "Acceleration"}
+	{attribute addProperty Units "mm/s^2"}
+	Acc : REAL;
+	{attribute addProperty Name "Deceleration"}
+	{attribute addProperty Units "mm/s^2"}
+	Dcc : REAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Position := Position + 0.1;
+Speed := Position / 0.025;
+Acc := 1000.0;
+Dcc := 1000.0;]]></ST>
+    </Implementation>
+    <LineIds Name="fbDrive">
+      <LineId Id="9" Count="0" />
+      <LineId Id="18" Count="2" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <DUT Name="enumStationStatus" Id="{06c6387c-3238-42da-9f59-52d0a61711e9}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE enumStationStatus :
+(
+	Unknown := 0,
+	Available := 1,
+	UnAvailable := 2	
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

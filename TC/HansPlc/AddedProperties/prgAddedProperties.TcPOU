@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="prgAddedProperties" Id="{c9b6b6b5-de79-4a8c-ae2c-3902dd66ffac}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM prgAddedProperties
+VAR
+	{attribute addProperty Name "X"}
+	fbDriveX : fbDrive;
+	
+	{attribute addProperty Name "Y"}
+	fbDriveY : fbDrive;
+	
+	{attribute addProperty Name "Z"}
+	fbDriveZ : fbDrive;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbDriveX();
+fbDriveY();
+fbDriveZ();]]></ST>
+    </Implementation>
+    <LineIds Name="prgAddedProperties">
+      <LineId Id="5" Count="0" />
+      <LineId Id="14" Count="1" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

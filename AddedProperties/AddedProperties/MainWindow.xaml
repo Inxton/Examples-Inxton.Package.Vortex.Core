@@ -1,0 +1,114 @@
+﻿<Window x:Class="AddedProperties.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddedProperties.Wpf"
+        mc:Ignorable="d"
+        Title="Added Propeties" Height="450" Width="800"
+        DataContext="{x:Static local:App.Hans}">
+    <Window.Resources>
+      
+    </Window.Resources>
+    <TabControl>
+        <TabItem Header="Use of added propeties">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Viewbox DataContext="{Binding prgAddedProperties.fbDriveX}">
+                    <GroupBox Header="fbDrive">
+                        <StackPanel>
+                            <GroupBox Header="{Binding AttributeName}" DataContext="{Binding Position}">
+                                <WrapPanel>
+                                    <TextBlock Text="{Binding Cyclic}"></TextBlock>
+                                    <TextBlock Text="{Binding AttributeUnits}" Margin="5,0,0,0"></TextBlock>
+                                </WrapPanel>
+                            </GroupBox>
+                            <GroupBox Header="{Binding AttributeName}" DataContext="{Binding Speed}">
+                                <WrapPanel>
+                                    <TextBlock Text="{Binding Cyclic}"></TextBlock>
+                                    <TextBlock Text="{Binding AttributeUnits}" Margin="5,0,0,0"></TextBlock>
+                                </WrapPanel>
+                            </GroupBox>
+                            <GroupBox Header="{Binding AttributeName}" DataContext="{Binding Acc}">
+                                <WrapPanel>
+                                    <TextBlock Text="{Binding Cyclic}"></TextBlock>
+                                    <TextBlock Text="{Binding AttributeUnits}" Margin="5,0,0,0"></TextBlock>
+                                </WrapPanel>
+                            </GroupBox>
+                            <GroupBox Header="{Binding AttributeName}" DataContext="{Binding Dcc}">
+                                <WrapPanel>
+                                    <TextBlock Text="{Binding Cyclic}"></TextBlock>
+                                    <TextBlock Text="{Binding AttributeUnits}" Margin="5,0,0,0"></TextBlock>
+                                </WrapPanel>
+                            </GroupBox>
+                        </StackPanel>
+                    </GroupBox>
+                </Viewbox>
+                <Image Grid.Row="0" Grid.Column="1" Source="Assets/fbDrive.PNG"></Image>
+                <Viewbox Grid.Row="1" Grid.ColumnSpan="2">
+                    <TextBlock TextWrapping="WrapWithOverflow" Margin="10" Foreground="Green" Width="400" Height="100">
+                        <TextBlock.Text>
+                            Added properties allow you to define additional properties to variable or complex types. 
+                           Added properties can be then use in variaous ways. 
+                           This example demostrates the data binding of 'AttributeName' as descriptor of the displayed variable.
+                           These properties are prefixed with 'Attribute' on .net side.
+                        </TextBlock.Text>
+                    </TextBlock>
+                </Viewbox>
+            </Grid>
+        </TabItem>
+        <TabItem Header="More complex example">
+            <TabItem.Resources>
+                <ControlTemplate x:Key="DriveInfoControl">
+                    <GroupBox Header="{Binding AttributeName}">
+                        <StackPanel>
+                            <GroupBox Header="{Binding AttributeName}" DataContext="{Binding Position}">
+                                <WrapPanel>
+                                    <TextBlock Text="{Binding Cyclic}"></TextBlock>
+                                    <TextBlock Text="{Binding AttributeUnits}" Margin="5,0,0,0"></TextBlock>
+                                </WrapPanel>
+                            </GroupBox>
+                            <GroupBox Header="{Binding AttributeName}" DataContext="{Binding Speed}">
+                                <WrapPanel>
+                                    <TextBlock Text="{Binding Cyclic}"></TextBlock>
+                                    <TextBlock Text="{Binding AttributeUnits}" Margin="5,0,0,0"></TextBlock>
+                                </WrapPanel>
+                            </GroupBox>
+                            <GroupBox Header="{Binding AttributeName}" DataContext="{Binding Acc}">
+                                <WrapPanel>
+                                    <TextBlock Text="{Binding Cyclic}"></TextBlock>
+                                    <TextBlock Text="{Binding AttributeUnits}" Margin="5,0,0,0"></TextBlock>
+                                </WrapPanel>
+                            </GroupBox>
+                            <GroupBox Header="{Binding AttributeName}" DataContext="{Binding Dcc}">
+                                <WrapPanel>
+                                    <TextBlock Text="{Binding Cyclic}"></TextBlock>
+                                    <TextBlock Text="{Binding AttributeUnits}" Margin="5,0,0,0"></TextBlock>
+                                </WrapPanel>
+                            </GroupBox>
+                        </StackPanel>
+                    </GroupBox>
+                </ControlTemplate>
+            </TabItem.Resources>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <UniformGrid DataContext="{Binding prgAddedProperties, Mode=OneWay}" Rows="0" Columns="3">
+                    <ContentControl Template="{StaticResource DriveInfoControl}" DataContext="{Binding fbDriveX, Mode=OneWay}"/>
+                    <ContentControl Template="{StaticResource DriveInfoControl}" DataContext="{Binding fbDriveY, Mode=OneWay}"/>
+                    <ContentControl Template="{StaticResource DriveInfoControl}" DataContext="{Binding fbDriveY, Mode=OneWay}"/>
+                </UniformGrid>
+                <Image Grid.Row="1" Source="Assets/prgAddedProperties.PNG"></Image>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>

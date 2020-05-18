@@ -1,0 +1,66 @@
+{
+  "Types": [
+    {
+      "TypeAttributes": "",
+      "TypeName": "enumStationStatus",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 5
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "fbDrive",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 4
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "fbFluentString",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 4
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "fbWorldWeatherWatch",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 4
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "structWeatherStation",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 1
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "Utils",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 0
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "prgAddedProperties",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 3
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "MAIN",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 3
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "prgSimple",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 3
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "prgWeatherStations",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 3
+    }
+  ],
+  "Name": "HansPlc",
+  "Namespace": "HansPlc"
+}

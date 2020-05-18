@@ -1,0 +1,35 @@
+﻿<Window
+    x:Class="Simple.Wpf.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Simple.Wpf"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Simple.Wpf"
+    Width="800"
+    Height="450"
+    DataContext="{x:Static local:App.Hans}"
+    mc:Ignorable="d">
+    <Grid DataContext="{Binding prgSimple, Mode=OneWay}">
+        <StackPanel>
+            <TextBlock
+                Margin="10"
+                HorizontalAlignment="Center"
+                FontSize="48"
+                Text="{Binding _counter.Cyclic}"
+                TextWrapping="Wrap" />
+            <ToggleButton
+                Width="771"
+                Height="23"
+                Margin="13,10,11,10"
+                HorizontalAlignment="Center"
+                Content="Counter on/off"
+                IsChecked="{Binding _counterActive.Cyclic}" />
+            <Button
+                Margin="10"
+                HorizontalAlignment="Stretch"
+                Click="Button_Click"
+                Content="Reset counter" />
+        </StackPanel>
+    </Grid>
+</Window>

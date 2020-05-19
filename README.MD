@@ -81,16 +81,9 @@ Activate your configuration, download the PLC to your target system and run it a
 Follow instructions from [Beckhoff - Activating a TwinCAT 3 project
 ](https://infosys.beckhoff.com/english.php?content=../content/1033/tc3_plc_intro/36028799544005771.html&id=)
 
-## Copy the license file
-To run your Inxton application you need to have a valid licence. The preview licence file is provided completely free of charge. 
-It's simple, just grab it by following these steps. 
+## Install developer license
 
-Easy installation steps:
-1. Dowload **Licence.xml** file from github environment [here](http://bit.ly/future_of_automation) or as raw format [here](https://bit.ly/2w8nFbT).
-2. Don't forget to save licence as **.xml** file.
-3. Copy/Move licence into `C:\Inxton\Licence.xml` folder.
-
-> **Note:** *Preview licence is valid until 2020-SEPT-01. Don't worry, you should be fine, the full release is coming out in July 2020.*
+Get more information and your license [here](https://github.com/Inxton/documentation/blob/master/common/LicenseInstallation.md)
 
 ## Connect your app with PLC
 
@@ -245,14 +238,6 @@ In addition, this project demonstrates the ability to localize PLC strings in an
 
 We are more than happy to hear your feedback, ideas!
 Just submit it [here](https://github.com/Inxton/Feedback/issues/new/choose)  
-
-
-# License
-
-TLDR
-> You can use Inxton.Vortex.Framework free of charge, although when you want to use it in a production environment you need to go to  [INXTON.com](https://www.inxton.com/) and purchase a license.
-
-to make our lawyers happy - read the whole license agreement [here](https://github.com/Inxton/about/blob/master/license.md)
 
 
 ## What to do next?

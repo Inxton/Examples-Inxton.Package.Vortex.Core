@@ -68,11 +68,13 @@ Open Nuget manage for solution and restore missing packages.
 ![update_packages](./assets/update_packages.gif)
 
 ## Update Packages
-In case you have any problems with NuGet :
-Open *Package Manager Console* and type:
+In case you have any problem with package or if you get a message saying that 'vortex builder does not exist' when trying to run compiler open Tools -> NuGet Package Manager -> NuGet Package Console, go to *Package Manager Console* and execute:
+
 ~~~PowerShell
 Update-Package -Reinstall
 ~~~
+
+If you get any error messages you can ignore them at this point. 
 
 ## Activate the configuration
 

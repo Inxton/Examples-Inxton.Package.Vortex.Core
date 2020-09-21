@@ -583,7 +583,7 @@ namespace HansPlc
             /// This is POCO object for its respective onliner class. For documentation of this type see the onliner class.
             /// </summary>
             /// <exclude />
-	public partial class PlainstructWeatherStation : Vortex.Connector.IPlain
+	public partial class PlainstructWeatherStation : System.ComponentModel.INotifyPropertyChanged, Vortex.Connector.IPlain
 	{
 		System.String _StationICAO;
 		public System.String StationICAO
@@ -595,7 +595,11 @@ namespace HansPlc
 
 			set
 			{
-				_StationICAO = value;
+				if (_StationICAO != value)
+				{
+					_StationICAO = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(StationICAO)));
+				}
 			}
 		}
 
@@ -610,7 +614,11 @@ namespace HansPlc
 
 			set
 			{
-				_StationStatus = value;
+				if (_StationStatus != value)
+				{
+					_StationStatus = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(StationStatus)));
+				}
 			}
 		}
 
@@ -624,7 +632,11 @@ namespace HansPlc
 
 			set
 			{
-				_DewPoint = value;
+				if (_DewPoint != value)
+				{
+					_DewPoint = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(DewPoint)));
+				}
 			}
 		}
 
@@ -638,7 +650,11 @@ namespace HansPlc
 
 			set
 			{
-				_Pressure = value;
+				if (_Pressure != value)
+				{
+					_Pressure = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(Pressure)));
+				}
 			}
 		}
 
@@ -652,7 +668,11 @@ namespace HansPlc
 
 			set
 			{
-				_Temp = value;
+				if (_Temp != value)
+				{
+					_Temp = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(Temp)));
+				}
 			}
 		}
 
@@ -666,7 +686,11 @@ namespace HansPlc
 
 			set
 			{
-				_Visibility = value;
+				if (_Visibility != value)
+				{
+					_Visibility = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(Visibility)));
+				}
 			}
 		}
 
@@ -680,7 +704,11 @@ namespace HansPlc
 
 			set
 			{
-				_WindHeading = value;
+				if (_WindHeading != value)
+				{
+					_WindHeading = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(WindHeading)));
+				}
 			}
 		}
 
@@ -694,7 +722,11 @@ namespace HansPlc
 
 			set
 			{
-				_WindSpeed = value;
+				if (_WindSpeed != value)
+				{
+					_WindSpeed = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(WindSpeed)));
+				}
 			}
 		}
 
@@ -766,6 +798,7 @@ namespace HansPlc
 			this.CopyShadowToPlain((HansPlc.structWeatherStation)source);
 		}
 
+		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 		public PlainstructWeatherStation()
 		{
 		}

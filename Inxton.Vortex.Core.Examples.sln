@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.645
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.Wpf", "Simple\Simple.Wpf\Simple.Wpf.csproj", "{E909C7A6-5F17-4DEE-BF0C-A562FA082993}"
 EndProject
@@ -42,8 +42,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddedProperties.Console", "AddedProperties\AddedProperties.Console\AddedProperties.Console.csproj", "{BD253568-608C-45A6-9DF7-1B778D955668}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Connector", "_Connector", "{757990E4-F6CE-41F1-A0AC-27FAEDEB0B4D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Essentials.Wpf", "WeatherStations\Weather.Essentials.Wpf\Weather.Essentials.Wpf.csproj", "{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -259,26 +257,6 @@ Global
 		{C96B3945-1A93-4A16-820E-AC8873C2089F}.Release|TwinCAT RT (x64).Build.0 = Release|TwinCAT RT (x64)
 		{C96B3945-1A93-4A16-820E-AC8873C2089F}.Release|TwinCAT RT (x86).ActiveCfg = Release|TwinCAT RT (x86)
 		{C96B3945-1A93-4A16-820E-AC8873C2089F}.Release|TwinCAT RT (x86).Build.0 = Release|TwinCAT RT (x86)
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Debug|TwinCAT CE7 (ARMV7).ActiveCfg = Debug|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Debug|TwinCAT CE7 (ARMV7).Build.0 = Debug|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Debug|TwinCAT OS (ARMT2).ActiveCfg = Debug|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Debug|TwinCAT OS (ARMT2).Build.0 = Debug|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Debug|TwinCAT RT (x64).ActiveCfg = Debug|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Debug|TwinCAT RT (x64).Build.0 = Debug|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Debug|TwinCAT RT (x86).ActiveCfg = Debug|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Debug|TwinCAT RT (x86).Build.0 = Debug|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Release|Any CPU.Build.0 = Release|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Release|TwinCAT CE7 (ARMV7).ActiveCfg = Release|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Release|TwinCAT CE7 (ARMV7).Build.0 = Release|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Release|TwinCAT OS (ARMT2).ActiveCfg = Release|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Release|TwinCAT OS (ARMT2).Build.0 = Release|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Release|TwinCAT RT (x64).ActiveCfg = Release|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Release|TwinCAT RT (x64).Build.0 = Release|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Release|TwinCAT RT (x86).ActiveCfg = Release|Any CPU
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74}.Release|TwinCAT RT (x86).Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -292,10 +270,9 @@ Global
 		{702F5CD1-895E-40BC-B519-A32129448E17} = {DE5CD1A2-4D41-40ED-BBDE-00A6C75519A9}
 		{E5EA2BFA-3ED4-4010-9C47-B32F9347C13F} = {7B55F92A-9105-4226-A014-C9265C7CE6BD}
 		{BD253568-608C-45A6-9DF7-1B778D955668} = {7B55F92A-9105-4226-A014-C9265C7CE6BD}
-		{95E479AC-8808-46EB-BAB1-D75A3D9F9F74} = {B75D49D5-B125-4419-90F1-7C4FB2314A38}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {86F1AB36-9A8F-42AD-8F42-D078EDF6998B}
 		RESX_PrefixTranslations = False
+		SolutionGuid = {86F1AB36-9A8F-42AD-8F42-D078EDF6998B}
 	EndGlobalSection
 EndGlobal

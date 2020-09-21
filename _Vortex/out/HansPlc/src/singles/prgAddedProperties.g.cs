@@ -367,7 +367,7 @@ namespace HansPlc
             /// This is POCO object for its respective onliner class. For documentation of this type see the onliner class.
             /// </summary>
             /// <exclude />
-	public partial class PlainprgAddedProperties : Vortex.Connector.IPlain
+	public partial class PlainprgAddedProperties : System.ComponentModel.INotifyPropertyChanged, Vortex.Connector.IPlain
 	{
 		PlainfbDrive _fbDriveX;
 		public PlainfbDrive fbDriveX
@@ -379,7 +379,11 @@ namespace HansPlc
 
 			set
 			{
-				_fbDriveX = value;
+				if (_fbDriveX != value)
+				{
+					_fbDriveX = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(fbDriveX)));
+				}
 			}
 		}
 
@@ -393,7 +397,11 @@ namespace HansPlc
 
 			set
 			{
-				_fbDriveY = value;
+				if (_fbDriveY != value)
+				{
+					_fbDriveY = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(fbDriveY)));
+				}
 			}
 		}
 
@@ -407,7 +415,11 @@ namespace HansPlc
 
 			set
 			{
-				_fbDriveZ = value;
+				if (_fbDriveZ != value)
+				{
+					_fbDriveZ = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(fbDriveZ)));
+				}
 			}
 		}
 
@@ -459,6 +471,7 @@ namespace HansPlc
 			this.CopyShadowToPlain((HansPlc.prgAddedProperties)source);
 		}
 
+		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 		public PlainprgAddedProperties()
 		{
 			_fbDriveX = new PlainfbDrive();

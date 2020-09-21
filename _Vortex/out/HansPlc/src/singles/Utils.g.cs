@@ -279,7 +279,7 @@ namespace HansPlc
             /// This is POCO object for its respective onliner class. For documentation of this type see the onliner class.
             /// </summary>
             /// <exclude />
-	public partial class PlainUtils : Vortex.Connector.IPlain
+	public partial class PlainUtils : System.ComponentModel.INotifyPropertyChanged, Vortex.Connector.IPlain
 	{
 		PlainfbFluentString _FluentString;
 		public PlainfbFluentString FluentString
@@ -291,7 +291,11 @@ namespace HansPlc
 
 			set
 			{
-				_FluentString = value;
+				if (_FluentString != value)
+				{
+					_FluentString = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(FluentString)));
+				}
 			}
 		}
 
@@ -335,6 +339,7 @@ namespace HansPlc
 			this.CopyShadowToPlain((HansPlc.Utils)source);
 		}
 
+		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 		public PlainUtils()
 		{
 			_FluentString = new PlainfbFluentString();

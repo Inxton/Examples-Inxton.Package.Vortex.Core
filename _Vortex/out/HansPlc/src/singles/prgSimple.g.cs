@@ -355,7 +355,7 @@ namespace HansPlc
             /// This is POCO object for its respective onliner class. For documentation of this type see the onliner class.
             /// </summary>
             /// <exclude />
-	public partial class PlainprgSimple : Vortex.Connector.IPlain
+	public partial class PlainprgSimple : System.ComponentModel.INotifyPropertyChanged, Vortex.Connector.IPlain
 	{
 		System.UInt64 __counter;
 		public System.UInt64 _counter
@@ -367,7 +367,11 @@ namespace HansPlc
 
 			set
 			{
-				__counter = value;
+				if (__counter != value)
+				{
+					__counter = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(_counter)));
+				}
 			}
 		}
 
@@ -381,7 +385,11 @@ namespace HansPlc
 
 			set
 			{
-				__counterActive = value;
+				if (__counterActive != value)
+				{
+					__counterActive = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(_counterActive)));
+				}
 			}
 		}
 
@@ -395,7 +403,11 @@ namespace HansPlc
 
 			set
 			{
-				__reset = value;
+				if (__reset != value)
+				{
+					__reset = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(_reset)));
+				}
 			}
 		}
 
@@ -447,6 +459,7 @@ namespace HansPlc
 			this.CopyShadowToPlain((HansPlc.prgSimple)source);
 		}
 
+		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 		public PlainprgSimple()
 		{
 		}

@@ -451,7 +451,7 @@ namespace HansPlc
             /// This is POCO object for its respective onliner class. For documentation of this type see the onliner class.
             /// </summary>
             /// <exclude />
-	public partial class PlainfbWorldWeatherWatch : Vortex.Connector.IPlain
+	public partial class PlainfbWorldWeatherWatch : System.ComponentModel.INotifyPropertyChanged, Vortex.Connector.IPlain
 	{
 		PlainstructWeatherStation _NorthPole;
 		public PlainstructWeatherStation NorthPole
@@ -463,7 +463,11 @@ namespace HansPlc
 
 			set
 			{
-				_NorthPole = value;
+				if (_NorthPole != value)
+				{
+					_NorthPole = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(NorthPole)));
+				}
 			}
 		}
 
@@ -477,7 +481,11 @@ namespace HansPlc
 
 			set
 			{
-				_SouthPole = value;
+				if (_SouthPole != value)
+				{
+					_SouthPole = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(SouthPole)));
+				}
 			}
 		}
 
@@ -491,7 +499,11 @@ namespace HansPlc
 
 			set
 			{
-				_Verl = value;
+				if (_Verl != value)
+				{
+					_Verl = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(Verl)));
+				}
 			}
 		}
 
@@ -505,7 +517,11 @@ namespace HansPlc
 
 			set
 			{
-				_Kriva = value;
+				if (_Kriva != value)
+				{
+					_Kriva = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(Kriva)));
+				}
 			}
 		}
 
@@ -519,7 +535,11 @@ namespace HansPlc
 
 			set
 			{
-				_PlcCommentOnCurrentWeather = value;
+				if (_PlcCommentOnCurrentWeather != value)
+				{
+					_PlcCommentOnCurrentWeather = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(PlcCommentOnCurrentWeather)));
+				}
 			}
 		}
 
@@ -579,6 +599,7 @@ namespace HansPlc
 			this.CopyShadowToPlain((HansPlc.fbWorldWeatherWatch)source);
 		}
 
+		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 		public PlainfbWorldWeatherWatch()
 		{
 			_NorthPole = new PlainstructWeatherStation();

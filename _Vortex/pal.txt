@@ -148,3 +148,12 @@
 2020-04-06 11:12:24.249 +02:00 [INF] Building project 'HansPlc.HansPlc'
 2020-04-06 11:12:24.253 +02:00 [INF] Installing project libraries into project 'HansPlc'
 2020-04-06 11:12:24.968 +02:00 [INF] Updating project HansPlc.HansPlc
+2020-09-21 07:53:30.429 +02:00 [INF] Opening solution: C:\MTS\Develop\foxtroth\github\Examples-Inxton.Package.Vortex.Core\Inxton.Vortex.Core.Examples.sln
+2020-09-21 07:53:30.745 +02:00 [INF] Building project 'HansPlc.HansPlc'
+2020-09-21 07:53:30.746 +02:00 [INF] Installing project libraries into project 'HansPlc'
+2020-09-21 07:53:30.933 +02:00 [INF] Updating project HansPlc.HansPlc
+2020-09-21 07:53:34.070 +02:00 [WRN] Unable to update localization file in project HansPlcConnector
+2020-09-21 07:54:27.269 +02:00 [INF] Opening solution: C:\MTS\Develop\foxtroth\github\Examples-Inxton.Package.Vortex.Core\Inxton.Vortex.Core.Examples.sln
+2020-09-21 07:54:27.536 +02:00 [INF] Building project 'HansPlc.HansPlc'
+2020-09-21 07:54:27.538 +02:00 [INF] Installing project libraries into project 'HansPlc'
+2020-09-21 07:54:27.742 +02:00 [INF] Updating project HansPlc.HansPlc

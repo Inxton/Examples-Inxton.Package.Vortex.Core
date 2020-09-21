@@ -238,7 +238,7 @@ namespace HansPlc
             /// This is POCO object for its respective onliner class. For documentation of this type see the onliner class.
             /// </summary>
             /// <exclude />
-	public partial class PlainMAIN : Vortex.Connector.IPlain
+	public partial class PlainMAIN : System.ComponentModel.INotifyPropertyChanged, Vortex.Connector.IPlain
 	{
 		public void CopyPlainToCyclic(HansPlc.MAIN target)
 		{
@@ -276,6 +276,7 @@ namespace HansPlc
 			this.CopyShadowToPlain((HansPlc.MAIN)source);
 		}
 
+		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 		public PlainMAIN()
 		{
 		}

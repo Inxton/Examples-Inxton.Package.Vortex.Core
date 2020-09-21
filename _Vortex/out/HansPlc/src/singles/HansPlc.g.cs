@@ -367,7 +367,7 @@ namespace HansPlc
             /// This is POCO object for its respective onliner class. For documentation of this type see the onliner class.
             /// </summary>
             /// <exclude />
-	public partial class PlainHansPlcTwinController : Vortex.Connector.IPlain
+	public partial class PlainHansPlcTwinController : System.ComponentModel.INotifyPropertyChanged, Vortex.Connector.IPlain
 	{
 		PlainUtils _Utils;
 		public PlainUtils Utils
@@ -379,7 +379,11 @@ namespace HansPlc
 
 			set
 			{
-				_Utils = value;
+				if (_Utils != value)
+				{
+					_Utils = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(Utils)));
+				}
 			}
 		}
 
@@ -393,7 +397,11 @@ namespace HansPlc
 
 			set
 			{
-				_prgAddedProperties = value;
+				if (_prgAddedProperties != value)
+				{
+					_prgAddedProperties = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(prgAddedProperties)));
+				}
 			}
 		}
 
@@ -407,7 +415,11 @@ namespace HansPlc
 
 			set
 			{
-				_MAIN = value;
+				if (_MAIN != value)
+				{
+					_MAIN = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(MAIN)));
+				}
 			}
 		}
 
@@ -421,7 +433,11 @@ namespace HansPlc
 
 			set
 			{
-				_prgSimple = value;
+				if (_prgSimple != value)
+				{
+					_prgSimple = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(prgSimple)));
+				}
 			}
 		}
 
@@ -435,7 +451,11 @@ namespace HansPlc
 
 			set
 			{
-				_prgWeatherStations = value;
+				if (_prgWeatherStations != value)
+				{
+					_prgWeatherStations = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(prgWeatherStations)));
+				}
 			}
 		}
 
@@ -495,6 +515,7 @@ namespace HansPlc
 			this.CopyShadowToPlain((HansPlc.HansPlcTwinController)source);
 		}
 
+		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 		public PlainHansPlcTwinController()
 		{
 			_Utils = new PlainUtils();

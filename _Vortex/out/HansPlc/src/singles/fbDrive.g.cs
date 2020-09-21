@@ -410,7 +410,7 @@ namespace HansPlc
             /// This is POCO object for its respective onliner class. For documentation of this type see the onliner class.
             /// </summary>
             /// <exclude />
-	public partial class PlainfbDrive : Vortex.Connector.IPlain
+	public partial class PlainfbDrive : System.ComponentModel.INotifyPropertyChanged, Vortex.Connector.IPlain
 	{
 		System.Double _Position;
 		public System.Double Position
@@ -422,7 +422,11 @@ namespace HansPlc
 
 			set
 			{
-				_Position = value;
+				if (_Position != value)
+				{
+					_Position = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(Position)));
+				}
 			}
 		}
 
@@ -436,7 +440,11 @@ namespace HansPlc
 
 			set
 			{
-				_Speed = value;
+				if (_Speed != value)
+				{
+					_Speed = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(Speed)));
+				}
 			}
 		}
 
@@ -450,7 +458,11 @@ namespace HansPlc
 
 			set
 			{
-				_Acc = value;
+				if (_Acc != value)
+				{
+					_Acc = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(Acc)));
+				}
 			}
 		}
 
@@ -464,7 +476,11 @@ namespace HansPlc
 
 			set
 			{
-				_Dcc = value;
+				if (_Dcc != value)
+				{
+					_Dcc = value;
+					PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(nameof(Dcc)));
+				}
 			}
 		}
 
@@ -520,6 +536,7 @@ namespace HansPlc
 			this.CopyShadowToPlain((HansPlc.fbDrive)source);
 		}
 
+		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
 		public PlainfbDrive()
 		{
 		}

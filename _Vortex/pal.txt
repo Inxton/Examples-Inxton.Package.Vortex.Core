@@ -157,3 +157,45 @@
 2020-09-21 07:54:27.536 +02:00 [INF] Building project 'HansPlc.HansPlc'
 2020-09-21 07:54:27.538 +02:00 [INF] Installing project libraries into project 'HansPlc'
 2020-09-21 07:54:27.742 +02:00 [INF] Updating project HansPlc.HansPlc
+2021-02-18 12:37:49.300 +01:00 [INF] Opening solution: C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\Inxton.Vortex.Core.Examples.sln
+2021-02-18 12:37:49.437 +01:00 [INF] Loading dependency tree for project 'C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\HansPlcConnector.csproj'
+2021-02-18 12:37:49.992 +01:00 [INF] Building project 'HansPlc.HansPlc'
+2021-02-18 12:37:50.042 +01:00 [INF] Updating project HansPlc.HansPlc
+2021-02-18 12:37:51.963 +01:00 [INF] Compiling plc library HansPlc into C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_meta\HansPlc...
+2021-02-18 12:37:52.170 +01:00 [INF] Library for project HansPlc will not be created because it is not a managed library. If want the library to be compiled you will need to fill in information in property tab of the project.
+2021-02-18 12:38:52.751 +01:00 [INF] Opening solution: C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\Inxton.Vortex.Core.Examples.sln
+2021-02-18 12:38:52.871 +01:00 [INF] Loading dependency tree for project 'C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\HansPlcConnector.csproj'
+2021-02-18 12:38:53.203 +01:00 [INF] Building project 'HansPlc.HansPlc'
+2021-02-18 12:38:53.245 +01:00 [INF] Updating project HansPlc.HansPlc
+2021-02-18 12:38:54.866 +01:00 [INF] Compiling plc library HansPlc into C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_meta\HansPlc...
+2021-02-18 12:38:54.908 +01:00 [INF] Library for project HansPlc will not be created because it is not a managed library. If want the library to be compiled you will need to fill in information in property tab of the project.
+2021-02-18 12:39:18.918 +01:00 [INF] Opening solution: C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\Inxton.Vortex.Core.Examples.sln
+2021-02-18 12:39:19.051 +01:00 [INF] Loading dependency tree for project 'C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\HansPlcConnector.csproj'
+2021-02-18 12:39:19.397 +01:00 [INF] Building project 'HansPlc.HansPlc'
+2021-02-18 12:39:19.449 +01:00 [INF] Updating project HansPlc.HansPlc
+2021-02-18 12:39:21.052 +01:00 [WRN] Twin assembly version (0.0.0.0) and plc project version (0.0.0.1) do not match. You need to adjust the version of the plc project manually. Project property tab version.
+2021-02-18 12:39:21.053 +01:00 [INF] Twin assembly version '0.0.0.0' and plc library version '0.0.0.1' of 'HansPlc' do not match the library will not be compiled.
+2021-02-18 13:03:42.449 +01:00 [INF] Opening solution: C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\Inxton.Vortex.Core.Examples.sln
+2021-02-18 13:03:42.592 +01:00 [INF] Loading dependency tree for project 'C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\HansPlcConnector.csproj'
+2021-02-18 13:03:43.055 +01:00 [INF] Building project 'HansPlc.HansPlc'
+2021-02-18 13:03:43.121 +01:00 [INF] Updating project HansPlc.HansPlc
+2021-02-18 13:03:45.313 +01:00 [WRN] Twin assembly version (0.0.0.0) and plc project version (0.0.0.1) do not match. You need to adjust the version of the plc project manually. Project property tab version.
+2021-02-18 13:03:45.315 +01:00 [INF] Twin assembly version '0.0.0.0' and plc library version '0.0.0.1' of 'HansPlc' do not match the library will not be compiled.
+2021-02-18 13:49:33.710 +01:00 [INF] Opening solution: C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\Inxton.Vortex.Core.Examples.sln
+2021-02-18 13:49:33.881 +01:00 [INF] Loading dependency tree for project 'C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\HansPlcConnector.csproj'
+2021-02-18 13:49:34.479 +01:00 [INF] Building project 'HansPlc.HansPlc'
+2021-02-18 13:49:34.543 +01:00 [INF] Updating project HansPlc.HansPlc
+2021-02-18 13:49:36.827 +01:00 [WRN] Twin assembly version (0.0.0.0) and plc project version (0.0.0.1) do not match. You need to adjust the version of the plc project manually. Project property tab version.
+2021-02-18 13:49:36.828 +01:00 [INF] Twin assembly version '0.0.0.0' and plc library version '0.0.0.1' of 'HansPlc' do not match the library will not be compiled.
+2021-02-18 13:51:41.628 +01:00 [INF] Opening solution: C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\Inxton.Vortex.Core.Examples.sln
+2021-02-18 13:51:42.385 +01:00 [INF] Loading dependency tree for project 'C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\HansPlcConnector.csproj'
+2021-02-18 13:51:44.707 +01:00 [INF] Building project 'HansPlc.HansPlc'
+2021-02-18 13:51:44.820 +01:00 [INF] Updating project HansPlc.HansPlc
+2021-02-18 13:51:47.597 +01:00 [WRN] Twin assembly version (0.0.0.0) and plc project version (0.0.0.1) do not match. You need to adjust the version of the plc project manually. Project property tab version.
+2021-02-18 13:51:47.602 +01:00 [INF] Twin assembly version '0.0.0.0' and plc library version '0.0.0.1' of 'HansPlc' do not match the library will not be compiled.
+2021-02-23 20:51:57.946 +01:00 [INF] Opening solution: C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\Inxton.Vortex.Core.Examples.sln
+2021-02-23 20:51:58.056 +01:00 [INF] Loading dependency tree for project 'C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\HansPlcConnector.csproj'
+2021-02-23 20:51:58.368 +01:00 [INF] Building project 'HansPlc.HansPlc'
+2021-02-23 20:51:58.414 +01:00 [INF] Updating project HansPlc.HansPlc
+2021-02-23 20:51:59.910 +01:00 [WRN] Twin assembly version (0.0.0.0) and plc project version (0.0.0.1) do not match. You need to adjust the version of the plc project manually. Project property tab version.
+2021-02-23 20:51:59.911 +01:00 [INF] Twin assembly version '0.0.0.0' and plc library version '0.0.0.1' of 'HansPlc' do not match the library will not be compiled.

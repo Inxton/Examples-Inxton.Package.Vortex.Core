@@ -15,6 +15,11 @@
     <Implicit_KindOfTask>{5ae3cf3e-b324-428c-abc2-a639431269b1}</Implicit_KindOfTask>
     <Implicit_Jitter_Distribution>{2149dd8a-699c-4a98-845d-049173cb586c}</Implicit_Jitter_Distribution>
     <LibraryReferences>{c2ab9d6e-e52d-4eb9-98f7-05fad18b156b}</LibraryReferences>
+    <Company>HansPlc</Company>
+    <Released>false</Released>
+    <ProjectVersion>0.0.0.1</ProjectVersion>
+    <DefaultNamespace>HansPlc</DefaultNamespace>
+    <Placeholder>HansPlc</Placeholder>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AddedProperties\fbDrive.TcPOU">

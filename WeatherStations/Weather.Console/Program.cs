@@ -23,12 +23,14 @@
         /// <param name="args">arguments</param>
         static void Main(string[] args)
         {
-            // Kicks out operations for HansPlc
-            Hans.Connector.BuildAndStart();
-
             // SetCulture("en"); // Default
             // SetCulture("de"); // Uncomment for German
             // SetCulture("fr"); // Uncomment for French
+
+            // Kicks out operations for HansPlc
+            Hans.Connector.BuildAndStart();
+
+          
           
 
             // Reading modes

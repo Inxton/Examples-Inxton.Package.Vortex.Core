@@ -22,7 +22,7 @@ namespace HansPlcConnector.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Localizations {
+    public class Localizations {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace HansPlcConnector.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HansPlcConnector.Properties.Localizations", typeof(Localizations).Assembly);
@@ -51,7 +51,7 @@ namespace HansPlcConnector.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Dew Point.
         /// </summary>
-        internal static string ___Dew_Point__ {
+        public static string ___Dew_Point__ {
             get {
                 return ResourceManager.GetString("___Dew_Point__", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to It is as cold as it should be at the nort pole..
         /// </summary>
-        internal static string ___It_is_as_cold_as_it_should_be_at_the_nort_pole___ {
+        public static string ___It_is_as_cold_as_it_should_be_at_the_nort_pole___ {
             get {
                 return ResourceManager.GetString("___It_is_as_cold_as_it_should_be_at_the_nort_pole___", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to It is as cold as it should be at the souht pole..
         /// </summary>
-        internal static string ___It_is_as_cold_as_it_should_be_at_the_souht_pole___ {
+        public static string ___It_is_as_cold_as_it_should_be_at_the_souht_pole___ {
             get {
                 return ResourceManager.GetString("___It_is_as_cold_as_it_should_be_at_the_souht_pole___", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to It is fairly warm at the north pole..
         /// </summary>
-        internal static string ___It_is_fairly_warm_at_the_north_pole___ {
+        public static string ___It_is_fairly_warm_at_the_north_pole___ {
             get {
                 return ResourceManager.GetString("___It_is_fairly_warm_at_the_north_pole___", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to It is fairly warm at the south pole..
         /// </summary>
-        internal static string ___It_is_fairly_warm_at_the_south_pole___ {
+        public static string ___It_is_fairly_warm_at_the_south_pole___ {
             get {
                 return ResourceManager.GetString("___It_is_fairly_warm_at_the_south_pole___", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to It is freezing in Kriva..
         /// </summary>
-        internal static string ___It_is_freezing_in_Kriva___ {
+        public static string ___It_is_freezing_in_Kriva___ {
             get {
                 return ResourceManager.GetString("___It_is_freezing_in_Kriva___", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to It is freezing in Verl..
         /// </summary>
-        internal static string ___It_is_freezing_in_Verl___ {
+        public static string ___It_is_freezing_in_Verl___ {
             get {
                 return ResourceManager.GetString("___It_is_freezing_in_Verl___", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to It is not freezing in Kriva..
         /// </summary>
-        internal static string ___It_is_not_freezing_in_Kriva___ {
+        public static string ___It_is_not_freezing_in_Kriva___ {
             get {
                 return ResourceManager.GetString("___It_is_not_freezing_in_Kriva___", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to It is not freezing in Verl..
         /// </summary>
-        internal static string ___It_is_not_freezing_in_Verl___ {
+        public static string ___It_is_not_freezing_in_Verl___ {
             get {
                 return ResourceManager.GetString("___It_is_not_freezing_in_Verl___", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Kriva, Slovakia.
         /// </summary>
-        internal static string ___Kriva__Slovakia__ {
+        public static string ___Kriva__Slovakia__ {
             get {
                 return ResourceManager.GetString("___Kriva__Slovakia__", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Kriva station is not available..
         /// </summary>
-        internal static string ___Kriva_station_is_not_available___ {
+        public static string ___Kriva_station_is_not_available___ {
             get {
                 return ResourceManager.GetString("___Kriva_station_is_not_available___", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to North pole station.
         /// </summary>
-        internal static string ___North_pole_station__ {
+        public static string ___North_pole_station__ {
             get {
                 return ResourceManager.GetString("___North_pole_station__", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to North pole station is not available..
         /// </summary>
-        internal static string ___North_pole_station_is_not_available___ {
+        public static string ___North_pole_station_is_not_available___ {
             get {
                 return ResourceManager.GetString("___North_pole_station_is_not_available___", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Pressure.
         /// </summary>
-        internal static string ___Pressure__ {
+        public static string ___Pressure__ {
             get {
                 return ResourceManager.GetString("___Pressure__", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to So, the weather situation is following.
         /// </summary>
-        internal static string ___So__the_weather_situation_is_following__ {
+        public static string ___So__the_weather_situation_is_following__ {
             get {
                 return ResourceManager.GetString("___So__the_weather_situation_is_following__", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to South pole station.
         /// </summary>
-        internal static string ___South_pole_station__ {
+        public static string ___South_pole_station__ {
             get {
                 return ResourceManager.GetString("___South_pole_station__", resourceCulture);
             }
@@ -207,7 +207,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to South pole station is not available..
         /// </summary>
-        internal static string ___South_pole_station_is_not_available___ {
+        public static string ___South_pole_station_is_not_available___ {
             get {
                 return ResourceManager.GetString("___South_pole_station_is_not_available___", resourceCulture);
             }
@@ -216,7 +216,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Station name (ICAO).
         /// </summary>
-        internal static string ___Station_name__ICAO___ {
+        public static string ___Station_name__ICAO___ {
             get {
                 return ResourceManager.GetString("___Station_name__ICAO___", resourceCulture);
             }
@@ -225,7 +225,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Station status.
         /// </summary>
-        internal static string ___Station_status__ {
+        public static string ___Station_status__ {
             get {
                 return ResourceManager.GetString("___Station_status__", resourceCulture);
             }
@@ -234,7 +234,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Temperature.
         /// </summary>
-        internal static string ___Temperature__ {
+        public static string ___Temperature__ {
             get {
                 return ResourceManager.GetString("___Temperature__", resourceCulture);
             }
@@ -243,7 +243,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Verl, Germany.
         /// </summary>
-        internal static string ___Verl__Germany__ {
+        public static string ___Verl__Germany__ {
             get {
                 return ResourceManager.GetString("___Verl__Germany__", resourceCulture);
             }
@@ -252,7 +252,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Verl station is not available..
         /// </summary>
-        internal static string ___Verl_station_is_not_available___ {
+        public static string ___Verl_station_is_not_available___ {
             get {
                 return ResourceManager.GetString("___Verl_station_is_not_available___", resourceCulture);
             }
@@ -261,7 +261,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Visibility.
         /// </summary>
-        internal static string ___Visibility__ {
+        public static string ___Visibility__ {
             get {
                 return ResourceManager.GetString("___Visibility__", resourceCulture);
             }
@@ -270,7 +270,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to What plc says.
         /// </summary>
-        internal static string ___What_plc_says__ {
+        public static string ___What_plc_says__ {
             get {
                 return ResourceManager.GetString("___What_plc_says__", resourceCulture);
             }
@@ -279,7 +279,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Wind heading.
         /// </summary>
-        internal static string ___Wind_heading__ {
+        public static string ___Wind_heading__ {
             get {
                 return ResourceManager.GetString("___Wind_heading__", resourceCulture);
             }
@@ -288,7 +288,7 @@ namespace HansPlcConnector.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Wind speed.
         /// </summary>
-        internal static string ___Wind_speed__ {
+        public static string ___Wind_speed__ {
             get {
                 return ResourceManager.GetString("___Wind_speed__", resourceCulture);
             }

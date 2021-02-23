@@ -1,0 +1,81 @@
+{
+  "AliasBlocks": [],
+  "EnumBlocks": [
+    {
+      "Name": "enumStationStatus",
+      "DeclarationText": "[NS : '' NAME : 'enumStationStatus']\n{attribute 'qualified_only'}\n{attribute 'strict'}\nTYPE enumStationStatus :\n(\n\tUnknown := 0,\n\tAvailable := 1,\n\tUnAvailable := 2\t\n);\nEND_TYPE\n",
+      "MirrorFiles": null
+    }
+  ],
+  "FunctionBlocks": [
+    {
+      "ImplementationText": "",
+      "Methods": [],
+      "Properties": [],
+      "Name": "fbDrive",
+      "DeclarationText": "[NS : '' NAME : 'fbDrive']\nFUNCTION_BLOCK fbDrive\nVAR\n\t{attribute addProperty Name \"Position\"}\n    {attribute addProperty Units \"nm\"}\t\n\tPosition : LREAL;\n\t{attribute addProperty Name \"Speed\"}\n\t{attribute addProperty Units \"mm/s\"}\n\tSpeed : LREAL;\n\t{attribute addProperty Name \"Acceleration\"}\n\t{attribute addProperty Units \"mm/s^2\"}\n\tAcc : REAL;\n\t{attribute addProperty Name \"Deceleration\"}\n\t{attribute addProperty Units \"mm/s^2\"}\n\tDcc : REAL;\nEND_VAR\n",
+      "MirrorFiles": null
+    },
+    {
+      "ImplementationText": "",
+      "Methods": [],
+      "Properties": [],
+      "Name": "fbFluentString",
+      "DeclarationText": "[NS : '' NAME : 'fbFluentString']\nFUNCTION_BLOCK fbFluentString\nVAR\n\t_resultString : STRING(255);\nEND_VAR\n",
+      "MirrorFiles": null
+    },
+    {
+      "ImplementationText": "",
+      "Methods": [],
+      "Properties": [],
+      "Name": "fbWorldWeatherWatch",
+      "DeclarationText": "[NS : '' NAME : 'fbWorldWeatherWatch']\nFUNCTION_BLOCK fbWorldWeatherWatch\nVAR\n\t{attribute addProperty Name \"<#North pole station#>\"}\n\tNorthPole : structWeatherStation := (StationICAO := 'CYRB');\n\t{attribute addProperty Name \"<#South pole station#>\"}\n\tSouthPole : structWeatherStation := (StationICAO := 'NZSP');\n\t{attribute addProperty Name \"<#Verl, Germany#>\"}\n\tVerl : structWeatherStation := (StationICAO := 'EDLP');\n\t{attribute addProperty Name \"<#Kriva, Slovakia#>\"}\n\tKriva : structWeatherStation := (StationICAO := 'LZIB');\n\t\n\t{attribute addProperty Name \"<#What plc says#>\"}\n\tPlcCommentOnCurrentWeather : STRING(255);\nEND_VAR\n",
+      "MirrorFiles": null
+    }
+  ],
+  "GlobalVariableTables": [],
+  "Name": "HansPlc",
+  "Namespace": null,
+  "ProgramBlocks": [
+    {
+      "ImplementationText": "",
+      "Methods": [],
+      "Properties": [],
+      "Name": "prgAddedProperties",
+      "DeclarationText": "[NS : '' NAME : 'prgAddedProperties']\nPROGRAM prgAddedProperties\nVAR\n\t{attribute addProperty Name \"X\"}\n\tfbDriveX : fbDrive;\n\t\n\t{attribute addProperty Name \"Y\"}\n\tfbDriveY : fbDrive;\n\t\n\t{attribute addProperty Name \"Z\"}\n\tfbDriveZ : fbDrive;\nEND_VAR\n",
+      "MirrorFiles": null
+    },
+    {
+      "ImplementationText": "",
+      "Methods": [],
+      "Properties": [],
+      "Name": "MAIN",
+      "DeclarationText": "[NS : '' NAME : 'MAIN']\nPROGRAM MAIN\n",
+      "MirrorFiles": null
+    },
+    {
+      "ImplementationText": "",
+      "Methods": [],
+      "Properties": [],
+      "Name": "prgSimple",
+      "DeclarationText": "[NS : '' NAME : 'prgSimple']\nPROGRAM prgSimple\nVAR\n\t_counter : ULINT;\n\t_counterActive : BOOL;\n\t_reset : BOOL;\nEND_VAR\n",
+      "MirrorFiles": null
+    },
+    {
+      "ImplementationText": "",
+      "Methods": [],
+      "Properties": [],
+      "Name": "prgWeatherStations",
+      "DeclarationText": "[NS : '' NAME : 'prgWeatherStations']\nPROGRAM prgWeatherStations\nVAR\n\t{attribute wpf [Container(Layout.Wrap)]}\n\t_weatherStationsCyclicAccess : fbWorldWeatherWatch;\n\t_weatherStationsBatchAccess : fbWorldWeatherWatch;\n\t_weatherStationsSynchronAccess : fbWorldWeatherWatch;\nEND_VAR\n",
+      "MirrorFiles": null
+    }
+  ],
+  "StructBlocks": [
+    {
+      "Name": "structWeatherStation",
+      "DeclarationText": "[NS : '' NAME : 'structWeatherStation'] [STRUCT]\nTYPE structWeatherStation :\nSTRUCT\n\t{attribute addProperty Name \"<#Station name (ICAO)#>\"}\t\n\tStationICAO : STRING(4);\n\t{attribute addProperty Name \"<#Station status#>\"}\n    StationStatus : enumStationStatus; \n\t{attribute addProperty Name \"<#Dew Point#>\"}\t\n\t{attribute addProperty Units \"°C\"}\n\tDewPoint : REAL;\n\t{attribute addProperty Name \"<#Pressure#>\"}\n    {attribute addProperty Units \"Torr\"}\t\n\tPressure : REAL;\n\t{attribute addProperty Name \"<#Temperature#>\"}\n\t{attribute addProperty Units \"°C\"}\n\tTemp : REAL;\n\t{attribute addProperty Name \"<#Visibility#>\"}\n    {attribute addProperty Units \"km\"}\t\n\tVisibility : REAL;\t\t\t\n\t{attribute addProperty Name \"<#Wind heading#>\"}\n    {attribute addProperty Units \"Azimuth\"}\t\n\tWindHeading : UINT;\t\n\t{attribute addProperty Name \"<#Wind speed#>\"}\n    {attribute addProperty Units \"m/s\"}\t\n\tWindSpeed : REAL;\t\nEND_STRUCT\nEND_TYPE\n",
+      "MirrorFiles": null
+    }
+  ],
+  "UnionBlocks": []
+}

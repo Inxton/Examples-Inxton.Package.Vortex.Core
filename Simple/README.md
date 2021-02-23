@@ -1,5 +1,7 @@
 ![Inxton logo](../assets/logo.png)
 
+**N.B. ALL EXAMPLES ARE NOW IN VS2019 FORMAT**
+
 # Simple
 
 *Simple* examples have a rudimentary plc counter. We aimed to show basic manipulation with twins of the PLC. Accessing variables, reading, writing, displaying (WPF, and WinForms).

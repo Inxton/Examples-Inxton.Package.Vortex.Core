@@ -1,4 +1,7 @@
 ![Inxton logo](../assets/logo.png)
+
+**N.B. ALL EXAMPLES ARE NOW IN VS2019 FORMAT**
+
 # Weather stations
 
 In this example we are showing the ease with which you can use the power of .NET ecosystem with the PLC. We are reading the data from some weather stations from around the world (via .net library) and we pass the data to the PLC. Plc then makes its own statements about the weather situation in different parts of the world.

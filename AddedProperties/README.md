@@ -1,5 +1,7 @@
 ![Inxton logo](../assets/logo.png)
 
+**N.B. ALL EXAMPLES ARE NOW IN VS2019 FORMAT**
+
 #  AddedProperties
 
 This example is trying to expose the feature that allows you to introduce additional properties to twin objects in the PLC code. This feature is part of wider idea that is called "Single Point of Change" (SPOC).

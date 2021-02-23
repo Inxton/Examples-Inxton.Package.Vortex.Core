@@ -1,5 +1,8 @@
 ![Inxton logo](../assets/logo.png)
 
+**N.B. ALL EXAMPLES ARE NOW IN VS2019 FORMAT**
+ 
+
 # Welcome
 
 This repo contains a single solution with various project that aim to demonstrate features of Core package of Inxton.Vortex.Framework.

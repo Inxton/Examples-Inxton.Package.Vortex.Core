@@ -1,4 +1,4 @@
-﻿//#define LOCAL // Comment if your target is remote
+﻿#define LOCAL // Comment if your target is remote
 
 using Vortex.Adapters.Connector.Tc3.Adapter;
 

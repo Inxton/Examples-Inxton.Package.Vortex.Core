@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <DUT Name="stHugeArrayOfComplex" Id="{d0b90ac1-2c2a-45c8-860a-0a9bed6af3a4}">
+    <Declaration><![CDATA[TYPE stHugeArrayOfComplex :
+STRUCT	
+	// 265,000 BYTES
+	arr_of_complex : ARRAY[0..999] OF stComplex;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

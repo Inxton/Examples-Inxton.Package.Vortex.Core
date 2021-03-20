@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="prgPerf" Id="{cacd3814-60ec-466a-91b2-73a55b6b21a8}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM prgPerf
+VAR
+	hugeArrayOfComplex : stHugeArrayOfComplex;
+	hugeArrayOfPrimitive : stHugeArrayOfPrimitive;
+	hugeStructureOfComplex : stHugeStructureOfComplex;	
+	hugeStructureOfPrimitive : stHugeStructureOfPrimitive;	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

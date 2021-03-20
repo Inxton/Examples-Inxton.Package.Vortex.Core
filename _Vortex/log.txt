@@ -189,3 +189,63 @@
 2021-02-23 20:51:59.192 +01:00 [INF] Emitting files into 'C:\MTS\Develop\github\inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
 2021-02-23 20:51:59.217 +01:00 [INF] Compiling sources 'HansPlc'...
 2021-02-23 20:51:59.933 +01:00 [INF] >>>>>>I, Done
+2021-03-19 16:57:38.237 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 16:57:43.879 +01:00 [WRN] >>>>>>"W","","Type 'BIT' declared in 'HansPlc.stAllTypes' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","HansPlc","stAllTypes","0","0"
+2021-03-19 16:57:43.977 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 16:57:44.050 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 16:57:45.534 +01:00 [INF] >>>>>>I, Done
+2021-03-19 16:59:50.775 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 16:59:53.809 +01:00 [WRN] >>>>>>"W","","Type 'BIT' declared in 'HansPlc.stAllTypes' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","HansPlc","stAllTypes","0","0"
+2021-03-19 16:59:54.001 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 16:59:54.071 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 16:59:55.603 +01:00 [INF] >>>>>>I, Done
+2021-03-19 17:07:06.295 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 17:07:09.221 +01:00 [WRN] >>>>>>"W","","Type 'BIT' declared in 'HansPlc.stAllTypes' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","HansPlc","stAllTypes","0","0"
+2021-03-19 17:07:12.022 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 17:07:12.103 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 17:07:16.522 +01:00 [INF] >>>>>>I, Done
+2021-03-19 17:14:11.502 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 17:14:14.388 +01:00 [WRN] >>>>>>"W","","Type 'BIT' declared in 'HansPlc.stAllTypes' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","HansPlc","stAllTypes","0","0"
+2021-03-19 17:14:14.598 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 17:14:14.668 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 17:14:16.343 +01:00 [INF] >>>>>>I, Done
+2021-03-19 17:18:43.159 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 17:18:46.481 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 17:18:46.563 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 17:18:48.338 +01:00 [INF] >>>>>>I, Done
+2021-03-19 17:21:22.982 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 17:21:26.052 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 17:21:26.123 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 17:21:27.877 +01:00 [INF] >>>>>>I, Done
+2021-03-19 17:26:30.287 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 17:26:36.397 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 17:26:36.499 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 17:26:41.359 +01:00 [INF] >>>>>>I, Done
+2021-03-19 17:47:52.214 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 17:47:58.336 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 17:47:58.415 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 17:48:02.965 +01:00 [INF] >>>>>>I, Done
+2021-03-19 17:51:23.652 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 17:51:29.523 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 17:51:29.615 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 17:51:34.520 +01:00 [INF] >>>>>>I, Done
+2021-03-19 17:56:05.947 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 17:56:11.931 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 17:56:12.005 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 17:56:16.529 +01:00 [INF] >>>>>>I, Done
+2021-03-19 18:00:19.698 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 18:00:25.192 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 18:00:25.265 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 18:00:29.679 +01:00 [INF] >>>>>>I, Done
+2021-03-19 18:38:10.662 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 18:38:16.519 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 18:38:16.597 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 18:38:20.850 +01:00 [INF] >>>>>>I, Done
+2021-03-19 18:43:42.066 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-19 18:43:47.670 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-19 18:43:47.766 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-19 18:43:52.403 +01:00 [INF] >>>>>>I, Done
+2021-03-20 08:31:11.489 +01:00 [INF] Builder version : 1.9.4.0 / 1.9.4+181.Branch.master.Sha.89921b3df5b23cdfe639f550582367c9957781ff
+2021-03-20 08:31:22.328 +01:00 [INF] Emitting files into 'J:\MTS\Develop\GitHub\Inxton\Examples-Inxton.Package.Vortex.Core\HansPlcConnector\_generated'
+2021-03-20 08:31:22.398 +01:00 [INF] Compiling sources 'HansPlc'...
+2021-03-20 08:31:27.017 +01:00 [INF] >>>>>>I, Done

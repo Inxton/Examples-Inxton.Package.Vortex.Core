@@ -6,7 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Inxton.Package.Vortex.Core" Version="1.9.4" />
-    <PackageReference Include="Inxton.Vortex.Framework.Abstractions" Version="1.9.2-preview.1" />
+    <PackageReference Include="Inxton.Vortex.Framework.Abstractions" Version="1.9.4" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Properties\Localizations.Designer.cs">

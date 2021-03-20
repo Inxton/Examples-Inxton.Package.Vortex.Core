@@ -1,0 +1,76 @@
+﻿<Window x:Class="Perf.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Perf.Wpf"
+        mc:Ignorable="d"
+        Title="Reading performance" Height="450" Width="800">
+    <Window.DataContext>
+        <local:MainWindowViewModel></local:MainWindowViewModel>
+    </Window.DataContext>
+    <Viewbox>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Reading"
+                  Grid.Row="0"
+                  Padding="10">
+            <Grid>
+                <StackPanel>
+                    <StackPanel.Resources>
+                        <Style TargetType="Label">
+                            <Setter Property="FontSize" Value="10"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <Label>Struct of primitive type [size: 1,024B]</Label>
+                    <ProgressBar Minimum="0" Value="{Binding ReadStructOfPrimitive}" Maximum="500"></ProgressBar>
+                    <TextBlock Text="{Binding ReadStructOfPrimitive, StringFormat={}{0:### ms}}"></TextBlock>
+                     <Label>Struct of complex type [size: 26,500B]</Label>
+                    <ProgressBar Minimum="0" Value="{Binding ReadStructureOfComplex}" Maximum="500"></ProgressBar>
+                    <TextBlock Text="{Binding ReadStructureOfComplex, StringFormat={}{0:### ms}}"></TextBlock>
+                    <Label>Array of primitive type [size: 1,024B]</Label>
+                    <ProgressBar Minimum="0" Value="{Binding ReadArrayOfPrimitive}" Maximum="500"></ProgressBar>
+                    <TextBlock Text="{Binding ReadArrayOfPrimitive, StringFormat={}{0:### ms}}"></TextBlock>
+                     <Label>Array of complex type [size: 265,000B]</Label>
+                    <ProgressBar Minimum="0" Value="{Binding ReadArrayOfCompex}" Maximum="500"></ProgressBar>
+                    <TextBlock Text="{Binding ReadArrayOfCompex, StringFormat={}{0:### ms}}"></TextBlock>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Writing"
+                  Grid.Row="1"
+                  Padding="10">
+            <Grid>
+                <StackPanel>
+                    <StackPanel.Resources>
+                        <Style TargetType="Label">
+                            <Setter Property="FontSize" Value="8"></Setter>
+                        </Style>
+                    </StackPanel.Resources>
+                    <WrapPanel>
+                        <CheckBox IsChecked="{Binding DoWrite}" Content="Enable write operations"></CheckBox>
+                        <Label>Number of items to write</Label>
+                        <TextBox Text="{Binding NumberOfItemsToWrite}"></TextBox>
+                    </WrapPanel>
+                    <Label>Struct of primitive type [size: 1B/item]</Label>
+                    <ProgressBar Minimum="0" Value="{Binding WriteStructOfPrimitive}" Maximum="500"></ProgressBar>
+                    <TextBlock Text="{Binding WriteStructOfPrimitive, StringFormat={}{0:### ms}}"></TextBlock>
+                    <Label>Struct of complex type [size: 265B/item]</Label>
+                    <ProgressBar Minimum="0" Value="{Binding WriteStructureOfComplex}" Maximum="500"></ProgressBar>
+                    <TextBlock Text="{Binding WriteStructureOfComplex, StringFormat={}{0:### ms}}"></TextBlock>
+                    <Label>Array of primitive type [size: 1B/item]</Label>
+                    <ProgressBar Minimum="0" Value="{Binding WriteArrayOfPrimitive}" Maximum="500"></ProgressBar>
+                    <TextBlock Text="{Binding WriteArrayOfPrimitive, StringFormat={}{0:### ms}}"></TextBlock>
+                    <Label>Array of complex type [size: 265B/item]</Label>
+                    <ProgressBar Minimum="0" Value="{Binding WriteArrayOfCompex}" Maximum="500"></ProgressBar>
+                    <TextBlock Text="{Binding WriteArrayOfCompex, StringFormat={}{0:### ms}}"></TextBlock>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+    </Grid>
+    </Viewbox>
+</Window>

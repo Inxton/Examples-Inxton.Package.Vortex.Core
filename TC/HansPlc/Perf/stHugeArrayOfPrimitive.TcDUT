@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <DUT Name="stHugeArrayOfPrimitive" Id="{40fb820d-7397-40e2-bb24-1cce1deef77e}">
+    <Declaration><![CDATA[TYPE stHugeArrayOfPrimitive :
+STRUCT
+	// 1,024 BYTES
+	arr_of_primitive : ARRAY[0..1023] OF BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -13,6 +13,6 @@ namespace HansPlc
         const string AmsId = "172.20.10.2.1.1"; // set your target ams id
         const int Port = 851;
 #endif
-        public static HansPlcTwinController HansPlc { get; } = new HansPlcTwinController(Tc3ConnectorAdapter.Create(AmsId, Port));
+        public static HansPlcTwinController HansPlc { get; } = new HansPlcTwinController(Tc3ConnectorAdapter.Create(AmsId, Port, true));
     }
 }

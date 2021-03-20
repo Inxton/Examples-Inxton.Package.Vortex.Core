@@ -26,6 +26,36 @@
     },
     {
       "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "stComplex",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 1
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "stHugeArrayOfPrimitive",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 1
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "stHugeStructureOfComplex",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 1
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "stHugeArrayOfComplex",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 1
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "stHugeStructureOfPrimitive",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 1
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
       "TypeName": "structWeatherStation",
       "Namespace": "HansPlc",
       "TypeMetaInfo": 1
@@ -45,6 +75,12 @@
     {
       "TypeAttributes": "\n{attribute addProperty Name \"\" }",
       "TypeName": "MAIN",
+      "Namespace": "HansPlc",
+      "TypeMetaInfo": 3
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "prgPerf",
       "Namespace": "HansPlc",
       "TypeMetaInfo": 3
     },

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <DUT Name="stHugeStructureOfComplex" Id="{1b6b1d01-51e6-480a-9a5f-ee88896fac75}">
+    <Declaration><![CDATA[TYPE stHugeStructureOfComplex :
+STRUCT
+	// 26,500 BYTES
+		_1:stComplex;
+		_2:stComplex;
+		_3:stComplex;
+		_4:stComplex;
+		_5:stComplex;
+		_6:stComplex;
+		_7:stComplex;
+		_8:stComplex;
+		_9:stComplex;
+		_10:stComplex;
+		_11:stComplex;
+		_12:stComplex;
+		_13:stComplex;
+		_14:stComplex;
+		_15:stComplex;
+		_16:stComplex;
+		_17:stComplex;
+		_18:stComplex;
+		_19:stComplex;
+		_20:stComplex;
+		_21:stComplex;
+		_22:stComplex;
+		_23:stComplex;
+		_24:stComplex;
+		_25:stComplex;
+		_26:stComplex;
+		_27:stComplex;
+		_28:stComplex;
+		_29:stComplex;
+		_30:stComplex;
+		_31:stComplex;
+		_32:stComplex;
+		_33:stComplex;
+		_34:stComplex;
+		_35:stComplex;
+		_36:stComplex;
+		_37:stComplex;
+		_38:stComplex;
+		_39:stComplex;
+		_40:stComplex;
+		_41:stComplex;
+		_42:stComplex;
+		_43:stComplex;
+		_44:stComplex;
+		_45:stComplex;
+		_46:stComplex;
+		_47:stComplex;
+		_48:stComplex;
+		_49:stComplex;
+		_50:stComplex;
+		_51:stComplex;
+		_52:stComplex;
+		_53:stComplex;
+		_54:stComplex;
+		_55:stComplex;
+		_56:stComplex;
+		_57:stComplex;
+		_58:stComplex;
+		_59:stComplex;
+		_60:stComplex;
+		_61:stComplex;
+		_62:stComplex;
+		_63:stComplex;
+		_64:stComplex;
+		_65:stComplex;
+		_66:stComplex;
+		_67:stComplex;
+		_68:stComplex;
+		_69:stComplex;
+		_70:stComplex;
+		_71:stComplex;
+		_72:stComplex;
+		_73:stComplex;
+		_74:stComplex;
+		_75:stComplex;
+		_76:stComplex;
+		_77:stComplex;
+		_78:stComplex;
+		_79:stComplex;
+		_80:stComplex;
+		_81:stComplex;
+		_82:stComplex;
+		_83:stComplex;
+		_84:stComplex;
+		_85:stComplex;
+		_86:stComplex;
+		_87:stComplex;
+		_88:stComplex;
+		_89:stComplex;
+		_90:stComplex;
+		_91:stComplex;
+		_92:stComplex;
+		_93:stComplex;
+		_94:stComplex;
+		_95:stComplex;
+		_96:stComplex;
+		_97:stComplex;
+		_98:stComplex;
+		_99:stComplex;
+		_100:stComplex;		
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

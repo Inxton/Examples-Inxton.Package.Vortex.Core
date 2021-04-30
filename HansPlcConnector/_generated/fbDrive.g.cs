@@ -342,6 +342,10 @@ namespace HansPlc
 		[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]
 		protected abstract class PlcfbDrive
 		{
+			public object Position;
+			public object Speed;
+			public object Acc;
+			public object Dcc;
 			///<summary>Prevents creating instance of this class via public constructor</summary><exclude/>
 			protected PlcfbDrive()
 			{

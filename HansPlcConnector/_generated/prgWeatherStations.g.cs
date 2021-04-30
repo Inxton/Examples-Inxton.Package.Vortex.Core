@@ -306,6 +306,9 @@ namespace HansPlc
 		[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]
 		protected abstract class PlcprgWeatherStations
 		{
+			public PlainfbWorldWeatherWatch _weatherStationsCyclicAccess;
+			public PlainfbWorldWeatherWatch _weatherStationsBatchAccess;
+			public PlainfbWorldWeatherWatch _weatherStationsSynchronAccess;
 			///<summary>Prevents creating instance of this class via public constructor</summary><exclude/>
 			protected PlcprgWeatherStations()
 			{

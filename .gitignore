@@ -201,3 +201,7 @@ _Libraries/
 _Vortex/*.dll
 _Vortex/*.exe
 _Vortex/builder/**
+log.txt
+pal.tx
+CompilerCache.md
+*.tsproj.bak

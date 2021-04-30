@@ -373,6 +373,11 @@ namespace HansPlc
 		[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]
 		protected abstract class PlcfbWorldWeatherWatch
 		{
+			public PlainstructWeatherStation NorthPole;
+			public PlainstructWeatherStation SouthPole;
+			public PlainstructWeatherStation Verl;
+			public PlainstructWeatherStation Kriva;
+			public object PlcCommentOnCurrentWeather;
 			///<summary>Prevents creating instance of this class via public constructor</summary><exclude/>
 			protected PlcfbWorldWeatherWatch()
 			{

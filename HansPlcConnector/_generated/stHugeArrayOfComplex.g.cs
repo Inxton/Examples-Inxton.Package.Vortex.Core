@@ -247,6 +247,7 @@ namespace HansPlc
 		[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]
 		protected abstract class PlcstHugeArrayOfComplex
 		{
+			public PlainstComplex arr_of_complex;
 			///<summary>Prevents creating instance of this class via public constructor</summary><exclude/>
 			protected PlcstHugeArrayOfComplex()
 			{

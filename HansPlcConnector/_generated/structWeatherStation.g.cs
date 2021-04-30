@@ -473,6 +473,14 @@ namespace HansPlc
 		[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]
 		protected abstract class PlcstructWeatherStation
 		{
+			public object StationICAO;
+			public System.Int16 StationStatus;
+			public object DewPoint;
+			public object Pressure;
+			public object Temp;
+			public object Visibility;
+			public object WindHeading;
+			public object WindSpeed;
 			///<summary>Prevents creating instance of this class via public constructor</summary><exclude/>
 			protected PlcstructWeatherStation()
 			{

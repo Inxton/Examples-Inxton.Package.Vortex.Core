@@ -297,6 +297,9 @@ namespace HansPlc
 		[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]
 		protected abstract class PlcprgSimple
 		{
+			public object _counter;
+			public object _counterActive;
+			public object _reset;
 			///<summary>Prevents creating instance of this class via public constructor</summary><exclude/>
 			protected PlcprgSimple()
 			{

@@ -334,6 +334,10 @@ namespace HansPlc
 		[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]
 		protected abstract class PlcprgPerf
 		{
+			public PlainstHugeArrayOfComplex hugeArrayOfComplex;
+			public PlainstHugeArrayOfPrimitive hugeArrayOfPrimitive;
+			public PlainstHugeStructureOfComplex hugeStructureOfComplex;
+			public PlainstHugeStructureOfPrimitive hugeStructureOfPrimitive;
 			///<summary>Prevents creating instance of this class via public constructor</summary><exclude/>
 			protected PlcprgPerf()
 			{
